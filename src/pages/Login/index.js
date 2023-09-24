@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail, validatePassword } from "../../Utils/validations";
 import { useNavigate } from "react-router-dom";
-import Input from "../../components/Input";
+import Input from "../../components/Forms/Input";
 
 const Login = () => {
   const [form, setForm] = useState([]);
