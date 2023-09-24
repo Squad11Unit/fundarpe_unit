@@ -1,25 +1,38 @@
 import React, { useState } from "react";
-import { validateEmail, validatePassword } from "../../Utils/validations";
+import { validatePassword } from "../../Utils/validations";
 import { useNavigate } from "react-router-dom";
 import Input from "../../components/Forms/Input";
+import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
+import CpfCnpj from "@react-br-forms/cpf-cnpj-mask";
+import reCaptcha from "../../Assets/reCaptcha.png";
 
 const Login = () => {
   const [form, setForm] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [cpfCnpj, setCpfCnpj] = useState("");
+  const [mask, setMask] = useState("");
+  const [agente, setAgente] = useState(true);
 
   const navigate = useNavigate();
 
+  const showAgenteLogin = () => {
+    setAgente(true);
+  };
+
+  const showAdminLogin = () => {
+    setAgente(false);
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const user = { email: form.email, password: form.password };
+    const user = { cpf: cpfCnpj, password: form.password };
 
     localStorage.setItem("User", JSON.stringify(user));
     console.log(user);
 
     try {
       setLoading(true);
-      if (form.email && form.password) {
-        alert("Login realizado com sucesso!");
+      if (form.password) {
         navigate("/");
       }
       setLoading(false);
@@ -28,50 +41,76 @@ const Login = () => {
     }
   };
 
+  const handleCpfCnpj = (event, type) => {
+    setCpfCnpj(event.target.value);
+    setMask(type === "CPF");
+  };
+
   const handlerChange = (event) => {
-    setForm({ ...form, [event.target.name]: event.target.value });
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
   };
 
   const InputValidator = () => {
-    return validateEmail(form.email) && validatePassword(form.password);
+    return validatePassword(form.password) && cpfCnpj.length > 10;
   };
 
   return (
-    <form onSubmit={handleSubmit} >
-      <h1>Login</h1>
-
-      <div style={{ display: "flex", flexDirection: "column", width: "50%" }}>
-        <Input
-          label={"Email"}
-          type={"email"}
-          name={"email"}
-          value={form.email}
-          required
-          placeholder={"Digite seu email"}
-          onChange={handlerChange}
-        />
-
-        <Input
-          label={"password"}
-          type={"password"}
-          name={"password"}
-          value={form.password}
-          required
-          placeholder={"Digite sua senha"}
-          onChange={handlerChange}
-        />
-
-        <button
-          type="submit"
-          disabled={!InputValidator() || loading}
+    <ContainerLogin>
+      <Acessos>
+        <h4
+          onClick={showAgenteLogin}
+          style={{ color: agente ? "black" : "#c3c3c3" }}
         >
-          Entrar
-        </button>
-      </div>
+          Acesso Agente
+        </h4>
+        <h4
+          onClick={showAdminLogin}
+          style={{ color: !agente ? "black" : "#c3c3c3" }}
+        >
+          Acesso Administrador
+        </h4>
+      </Acessos>
+      {agente ? (
+        <form onSubmit={handleSubmit}>
+          <div>
+            <CpfCnpj
+              type="tel"
+              value={cpfCnpj}
+              required
+              name={"cpfCnpj"}
+              placeholder={"CPF/CNPJ"}
+              onChange={handleCpfCnpj}
+            />
 
-      <p>Não possui conta? </p>
-      <a href="/cadastro">Cadastre-se</a>
-    </form>
+            <Input
+              type={"password"}
+              name={"password"}
+              value={form.password}
+              required
+              placeholder={"Senha"}
+              onChange={handlerChange}
+            />
+            <p>Esqueci minha senha </p>
+
+            <ReCaptcha>
+              <input type="checkbox" required />
+              <span>Não sou um robô</span>
+              <img style={{ width: "100px" }} src={reCaptcha} alt="logo" />
+            </ReCaptcha>
+
+            <button type="submit" disabled={!InputValidator() || loading}>
+              Entrar
+            </button>
+            <a href="/cadastro">Cadastre-se</a>
+          </div>
+        </form>
+      ) : (
+        <div>Login Admin</div>
+      )}
+    </ContainerLogin>
   );
 };
 

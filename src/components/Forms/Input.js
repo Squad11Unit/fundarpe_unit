@@ -1,7 +1,5 @@
-const Input = ({ type, value, onChange, name, placeholder, label }) => (
-
+const Input = ({ type, value, onChange, name, placeholder }) => (
   <div>
-    <label htmlFor={label}>{label}: </label>
     <input
       onChange={onChange}
       name={name}
