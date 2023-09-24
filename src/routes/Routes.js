@@ -5,8 +5,7 @@ import Register from "../Pages/Register";
 import PublicNotices from "../Pages/PublicNotices";
 import Login from "../Pages/Login";
 import Account from "../Pages/Account";
-import Admin from "../Pages/Admin";
-import AdminDetails from "../Pages/Admin/AdminDetais";
+import AdminDetails from "../Pages/AdminDetails";
 
 const AppRoutes = () => {
   return (
@@ -19,7 +18,7 @@ const AppRoutes = () => {
         <Route path="/perfil" element={<Account />} />
         <Route path="/edital/id" element={< PublicNotices />} />
         <Route path="*" element={< NotFound />} />
-        <Route path="/admin" element={< Admin />} />
+        <Route path="/admin" element={< AdminDetails />} />
         <Route path="/principal_admin" element={< AdminDetails />} />
       </Routes>
 
