@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import NotFound from "../pages/NotFound";
-import Register from "../pages/Register";
-import PublicNotices from "../pages/PublicNotices";
-import Login from "../pages/Login";
-import Account from "../pages/Account";
-import Admin from "../pages/Admin";
-import AdminDetails from "../pages/Admin/AdminDetais";
+import Home from "../Pages/Home";
+import NotFound from "../Pages/NotFound";
+import Register from "../Pages/Register";
+import PublicNotices from "../Pages/PublicNotices";
+import Login from "../Pages/Login";
+import Account from "../Pages/Account";
+import Admin from "../Pages/Admin";
+import AdminDetails from "../Pages/Admin/AdminDetais";
 
 const AppRoutes = () => {
   return (
