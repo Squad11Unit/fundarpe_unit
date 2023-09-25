@@ -1,7 +1,11 @@
+import PublicNotice from "../../components/PublicNotice"; 
+
 const PublicNotices = () => {
   return (
     <div>
-      <h1>Detalhe de edital</h1>
+      <PublicNotice>      
+        
+      </PublicNotice>
     </div>
   );
 }
