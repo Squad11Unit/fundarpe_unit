@@ -10,20 +10,18 @@ import AdminDetails from "../Pages/AdminDetails";
 const AppRoutes = () => {
   return (
     <BrowserRouter>
-
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={< Login />} />
-        <Route path="/cadastro" element={< Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro" element={<Register />} />
         <Route path="/perfil" element={<Account />} />
-        <Route path="/edital/id" element={< PublicNotices />} />
-        <Route path="*" element={< NotFound />} />
-        <Route path="/admin" element={< AdminDetails />} />
-        <Route path="/principal_admin" element={< AdminDetails />} />
+        <Route path="/edital/id" element={<PublicNotices />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/admin" element={<AdminDetails />} />
+        <Route path="/principal_admin" element={<AdminDetails />} />
       </Routes>
-
     </BrowserRouter>
   );
-}
+};
 
 export default AppRoutes;
