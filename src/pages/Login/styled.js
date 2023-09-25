@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerLogin = styled.div`
-  width: 100%;
-  margin: 2rem 0;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,26 +10,25 @@ export const ContainerLogin = styled.div`
     width: 480px;
     display: flex;
     background-color: #fff;
-    @media only screen and (max-device-width: 900px) {
-      width: 300px;
-    }
   }
   form div {
     width: 100%;
     display: flex;
+    gap: 1rem;
     align-items: center;
     align-content: center;
     margin: 1rem auto;
   }
   form input[type="password" i] {
-    width: 100%;
+    width: 445px;
     align-self: center;
     font-size: 1.3rem;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 0.2rem;
+    min-width: 300px;
     @media only screen and (max-device-width: 800px) {
-      width: 400px;
+      width: 40px;
     }
   }
   form input[type="tel" i] {
@@ -42,7 +40,7 @@ export const ContainerLogin = styled.div`
     min-width: 300px;
     margin: auto;
     @media only screen and (max-device-width: 800px) {
-      width: 250px;
+      width: 250px !important;
     }
   }
   form input:focus {
@@ -57,6 +55,9 @@ export const ContainerLogin = styled.div`
     align-self: flex-start;
     text-decoration: underline;
     font-weight: 600;
+    @media only screen and (max-device-width: 800px) {
+      margin-left: 4.9rem;
+    }
   }
   form a {
     font-size: 1.3rem;
@@ -82,11 +83,18 @@ export const ContainerLogin = styled.div`
   form button:disabled {
     background-color: #d07684;
     cursor: not-allowed;
+    @media only screen and (max-device-width: 800px) {
+      width: 220px;
+    }
   }
   form > div {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  @media only screen and (max-device-width: 500px) {
+    form {
+    }
   }
 `;
 
@@ -110,11 +118,8 @@ export const ReCaptcha = styled.div`
   > span {
     font-size: 1.3rem;
   }
-  @media only screen and (max-device-width: 700px) {
-    width: 250px;
-  }
-  @media only screen and (max-device-width: 900px) {
-    width: 350px;
+  @media only screen and (max-device-width: 800px) {
+    width: 250px !important;
   }
 `;
 
@@ -131,6 +136,7 @@ export const Acessos = styled.div`
     margin: 0;
   }
   @media only screen and (max-device-width: 700px) {
+    font-size: 1rem;
     gap: 1rem;
   }
 `;

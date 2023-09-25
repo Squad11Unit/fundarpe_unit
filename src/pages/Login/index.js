@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Input from "../../components/Forms/Input";
 import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
 import CpfCnpj from "@react-br-forms/cpf-cnpj-mask";
-import reCaptcha from "../../Assets/reCaptcha.png";
+import reCaptcha from "../../Assets/Form/reCaptcha.png";
 
 const Login = () => {
   const [form, setForm] = useState([]);
