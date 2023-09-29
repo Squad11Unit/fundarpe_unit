@@ -12,7 +12,7 @@ function CarouselHome({ description, title, detail }) {
             <img src={image} alt={name} />
             <Carousel.Caption>
               <h4>{title}</h4>
-              <span>{detail}</span>
+              <h5>{detail}</h5>
               <p>{description}</p>
             </Carousel.Caption>
           </Carousel.Item>
