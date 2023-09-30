@@ -1,19 +1,23 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
+import { Cards, Details, Meses, CardTitle } from "./styled";
 
-function CardHome() {
+function CardHome({ image, title, description, URL, day, month }) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <Cards href={URL}>
+      <Card style={{ width: "18rem" }}>
+        <Card.Img variant="top" src={image} />
+        <CardTitle>{title}</CardTitle>
+        <Card.Body>
+          <Details>
+            <Meses>
+              <h6>{month}</h6>
+              <h2>{day}</h2>
+            </Meses>
+            <Card.Text>{description}</Card.Text>
+          </Details>
+        </Card.Body>
+      </Card>
+    </Cards>
   );
 }
 
