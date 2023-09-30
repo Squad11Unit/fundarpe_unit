@@ -4,7 +4,8 @@ import { Cards, Details, Meses, CardTitle } from "./styled";
 function CardHome({ image, title, description, URL, day, month }) {
   return (
     <Cards href={URL}>
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "18rem", boxShadow:"2px 2px 2px 2px rgba(0, 0, 0, 0.2)"
+ }}>
         <Card.Img variant="top" src={image} />
         <CardTitle>{title}</CardTitle>
         <Card.Body>
