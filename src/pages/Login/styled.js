@@ -51,12 +51,12 @@ export const ContainerLogin = styled.div`
     color: #d3d3d3;
   }
   form p {
-    margin-top: -1rem;
-    align-self: flex-start;
+    margin: -1rem 295px 0 0;
     text-decoration: underline;
     font-weight: 600;
     @media only screen and (max-device-width: 800px) {
-      margin-left: 4.9rem;
+      margin-left: 15rem;
+      width: 250px;
     }
   }
   form a {
