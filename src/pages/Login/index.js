@@ -3,7 +3,6 @@ import { validatePassword } from "../../Utils/validations";
 import { useNavigate } from "react-router-dom";
 import Input from "../../components/Forms/Input";
 import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
-import CpfCnpj from "@react-br-forms/cpf-cnpj-mask";
 import reCaptcha from "../../Assets/Form/reCaptcha.png";
 
 const Login = () => {
@@ -76,7 +75,7 @@ const Login = () => {
       {agente ? (
         <form onSubmit={handleSubmit}>
           <div>
-            <CpfCnpj
+            <Input
               type="tel"
               value={cpfCnpj}
               required
