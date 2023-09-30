@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Input from "../../components/Forms/Input";
 import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
 import reCaptcha from "../../Assets/Form/reCaptcha.png";
+import Header from "../../components/Header";
 
 const Login = () => {
   const [form, setForm] = useState([]);
@@ -57,6 +58,8 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Header/>
     <ContainerLogin>
       <Acessos>
         <h4
@@ -110,6 +113,7 @@ const Login = () => {
         <div>Login Admin</div>
       )}
     </ContainerLogin>
+    </>
   );
 };
 
