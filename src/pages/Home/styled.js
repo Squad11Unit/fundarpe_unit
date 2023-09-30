@@ -1,4 +1,3 @@
-import { Card } from "react-bootstrap";
 import styled from "styled-components";
 
 export const H1 = styled.h1`
@@ -21,7 +20,18 @@ export const SelectGroup = styled.div`
   `;
   
   export const CardBox = styled.div`
-  margin: 100px 140px;
-  //border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 140px;
+  button {
+    font-size: 25px;
+    padding: 10px 55px ;
+    border-radius: 50px;
+    border-color: #3D37F1;
+    color: #3D37F1;
+    background-color: white;  
+  }  
   
 `;

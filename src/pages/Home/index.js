@@ -5,9 +5,8 @@ import { H1, SelectGroup, CardBox } from "./styled";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
-import Parecerista from "../../Assets/Principal/Card/parecerista.png";
 
-const Home = () => {
+function Home() {
   return (
     <div>
       <Header />
@@ -30,17 +29,11 @@ const Home = () => {
         </DropdownButton>
       </SelectGroup>
       <CardBox>
-        <CardHome
-          image={Parecerista}
-          URL="https://www.cultura.pe.gov.br/editais/edital-funcultura-geral-20222023/"
-          title="Parecerista"
-          day="15"
-          month="Jun"
-          description="EDITAL DE CREDENCIAMENTO DE PARECERISTA"
-        />
+        <CardHome />
+        <button>Ver mais</button>
       </CardBox>
     </div>
   );
-};
+}
 
 export default Home;
