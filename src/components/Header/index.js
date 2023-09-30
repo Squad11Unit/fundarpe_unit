@@ -1,30 +1,35 @@
 import { useNavigate } from "react-router";
 import { HeaderContainer, InitialOptions } from "./styled";
 import logoheader from "../../Assets/logoheader.png";
-import { BsGear } from "react-icons/bs";
 
-function Header() {
+function Header({ userName, institutions, login, buttonLogout, buttonRegister }) {
   const navigate = useNavigate();
   const ClearAll = () => {
-    window.localStorage.removeItem("User");
+    localStorage.removeItem("User");
     navigate("/");
   };
   return window.localStorage.getItem("User") ? (
     <HeaderContainer>
       <img src={logoheader} alt="Logo do Funcultura" />
       <InitialOptions>
-        <p>Instituições</p>
-        <p>Ana Silva</p>
-        <BsGear onClick={() => ClearAll()}/>
+        <a href="https://www.cultura.pe.gov.br/fundarpe/">{institutions}</a>
+        <a href="/perfil">{userName}</a>
+        {buttonLogout && (
+          <button onClick={() => ClearAll()}>{buttonLogout}</button>
+        )}
       </InitialOptions>
     </HeaderContainer>
   ) : (
     <HeaderContainer>
       <img src={logoheader} alt="Logo do Funcultura" />
       <InitialOptions>
-        <p>Instituições</p>
-        <a href="/login">Iniciar Sessão</a>
-        <button onClick={() => navigate("/cadastro")}>Registrar-se</button>
+        <a href="https://www.cultura.pe.gov.br/fundarpe/">{institutions}</a>
+        <a href="/login">{login}</a>
+        {buttonRegister && (
+          <button onClick={() => navigate("/cadastro")}>
+            {buttonRegister}
+          </button>
+        )}
       </InitialOptions>
     </HeaderContainer>
   );

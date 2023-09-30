@@ -4,7 +4,13 @@ import Header from "../../components/Header";
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header
+        userName="Ana Silva"
+        institutions="Institucionais"
+        buttonRegister="Registrar-se"
+        buttonLogout="Sair"
+        login="Iniciar Sessão"
+      />
       <CarouselHome
         title="Iniciativa do Governo de Pernambuco"
         detail="voltada para o apoio e promoção da cultura no estado"

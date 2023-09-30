@@ -17,9 +17,7 @@ export const InitialOptions = styled.div`
   display: flex;
   gap: 30px;
   align-items: center;
-  p {
-    margin-top: 13px;
-  }
+  font-size: 20px;
   svg {
     height: 25px;
     width: 25px;
