@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100wv;
     margin: 0;
     padding: 100px;
-    font-family: Open-Sans;
+    font-family: 'Open Sans';
 `;
 
 export const SectionOne = styled.div`
@@ -21,7 +21,7 @@ export const Title = styled.div`
     > p {
         font-weight: 600;
         line-height: 1.3;
-        width: 250px;
+        width: 240px;
         word-break: break-word;
         word-spacing: 4px;
         font-style: italic;
@@ -48,4 +48,9 @@ export const LampIcon = styled.div`
     color: #FFA500;
     display: flex;
     gap: 0.4rem;
+`;
+
+export const SectionTwo = styled.div`
+    display: flex;   
+    font-style: italic;
 `;
