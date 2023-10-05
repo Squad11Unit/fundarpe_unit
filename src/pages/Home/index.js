@@ -1,14 +1,16 @@
 import CardHome from "../../components/Card";
 import CarouselHome from "../../components/Carousel";
 import Header from "../../components/Header";
-import { H1, SelectGroup, CardBox } from "./styled";
+import { SelectGroup, CardBox, ContainerHome } from "./styled";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
+import { editalCard } from "../../components/Card/editalCard";
+import { eventsCard } from "../../components/Card/eventsCard";
 
 function Home() {
   return (
-    <div>
+    <ContainerHome>
       <Header
         userName="Ana Silva"
         institutions="Institucionais"
@@ -21,7 +23,7 @@ function Home() {
         detail="voltada para o apoio e promoção da cultura no estado"
         description="A Funcultura atua através de editais lançadas anualmente, essas oportunidades disponibilizam recursos do governo do Estado para artistas e produtores culturais para a realização de projetos em diversas áreas, visando fortalecer a cultura de Pernambuco."
       />
-      <H1>Novos Editais</H1>
+      <h1>Novos Editais</h1>
       <SelectGroup>
         <DropdownButton title="Mês">
           {meses.map((mes, index) => (
@@ -35,10 +37,39 @@ function Home() {
         </DropdownButton>
       </SelectGroup>
       <CardBox>
-        <CardHome />
-        <button>Ver mais</button>
+        {editalCard.map((item) => (
+          <CardHome
+            key={item.id}
+            URL={item.URL}
+            text={item.text}
+            title={item.title}
+            image={item.image}
+            month={item.month}
+            day={item.day}
+            description={item.description}
+          />
+        ))}
       </CardBox>
-    </div>
+      <button>Ver mais</button>
+
+      {/* :TODO SOBRE-FUNCULTURA */}
+
+      <h1>Eventos</h1>
+      <CardBox>
+        {eventsCard.map((item) => (
+          <CardHome
+            key={item.id}
+            URL={item.URL}
+            text={item.text}
+            title={item.title}
+            image={item.image}
+            month={item.month}
+            day={item.day}
+            description={item.description}
+          />
+        ))}
+      </CardBox>
+    </ContainerHome>
   );
 }
 

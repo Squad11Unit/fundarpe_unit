@@ -10,6 +10,9 @@ export const ContainerCard = styled.div`
 
 export const Cards = styled.a`
   text-decoration: none;
+  img {
+    border-radius: 4%;
+  }
 `;
 
 export const CardTitle = styled.div`
