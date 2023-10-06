@@ -53,4 +53,61 @@ export const LampIcon = styled.div`
 export const SectionTwo = styled.div`
     display: flex;   
     font-style: italic;
+    margin-top: 20px;
+    a {
+        color: #000000;
+    }
+
+    ul{
+        font-weight: bold;
+    }
+
+    li{
+        font-weight: 500;
+    }
+
+    li, ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    article {
+        div {
+            display: flex;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 20px;
+            }
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            div:nth-child(3) {
+                margin: 2px 0px 0px 562px;
+                button{
+                    background-color: #011A3F;
+                    border: none;
+                    font-weight: bold;
+                    border-radius: 50px;
+                    padding: 10px 20px;
+                }
+                svg{
+                    margin-right: 10px;
+                }
+            }
+
+
+        }
+    }
 `;
+

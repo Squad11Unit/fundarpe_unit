@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { HeaderContainer, InitialOptions } from "./styled";
-import logoheader from "../../Assets/logoheader.png";
+import logoheader from "../../assets/logoheader.png";
 
 function Header({ userName, institutions, login, buttonLogout, buttonRegister }) {
   const navigate = useNavigate();
