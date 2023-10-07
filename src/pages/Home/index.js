@@ -50,10 +50,10 @@ function Home() {
           />
         ))}
       </CardBox>
-      <button>Ver mais</button>
+      <button className={"b1"}>Ver mais</button>
 
-      {/* :TODO SOBRE-FUNCULTURA */}
-
+      {/* :TODO SOBRE-FUNCULTURA <h1>O funcultura</h1> */}
+      
       <h1>Eventos</h1>
       <CardBox>
         {eventsCard.map((item) => (

@@ -4,7 +4,7 @@ export const ContainerHome = styled.body`
   h1 {
     margin: 60px 0 15px 140px;
   }
-  button {
+  .b1 {
     font-size: 25px;
     padding: 10px 55px;
     border-radius: 50px;
