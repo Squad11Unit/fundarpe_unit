@@ -1,5 +1,5 @@
-import parecerista from "../../Assets/Principal/Card/parecerista.png";
-import funcultura from "../../Assets/Principal/Card/funcultura2023.png";
+import parecerista from "../../assets/Principal/Card/parecerista.png";
+import funcultura from "../../assets/Principal/Card/funcultura2023.png";
 
 export const editalCard = [
     {
@@ -35,7 +35,7 @@ export const editalCard = [
       text: "Banner do edital",
       image: funcultura,
       description: "7° EDITAL DO PROGRAMA DE FOMENTO À PRODUÇÃO EM MÚSICA DE PERNAMBUCO",
-      day: 1,
+      day: 10,
       month: "MAI",
       URL: "",
     },

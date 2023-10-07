@@ -20,18 +20,16 @@ export const CardTitle = styled.div`
 export const Details = styled.div`
   align-items: center;
   display: flex;
-  gap: 28px;
-  margin: 28px 0px 10px 10px;
-  height: 18vh;
-  width: 2vw;
-  font-weight: 700;
-  font-size: 13.5px;
+  gap: 22px;
+  margin: 5px 0 0 5px;
+  height: 20vh;
+  width: 21.5vw;
+  font-weight: 770;
+  font-size: 13px;
+  border: solid 2px white;
 `;
 
 export const Meses = styled.div`
   display: flex;
   flex-direction: column;
-  line-height: 0.95;
-  margin: -12px;
-  //border: solid 2px red;
 `;
