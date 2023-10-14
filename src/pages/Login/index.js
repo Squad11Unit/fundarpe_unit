@@ -110,7 +110,41 @@ const Login = () => {
           </div>
         </form>
       ) : (
-        <div>Login Admin</div>
+        <div>
+               <form onSubmit={handleSubmit}>
+          <div>
+            <Input
+              type="tel"
+              value={cpfCnpj}
+              required
+              name={"cpfCnpj"}
+              placeholder={"Matrícula"}
+              onChange={handleCpfCnpj}
+            />
+
+            <Input
+              type={"password"}
+              name={"password"}
+              value={form.password}
+              required
+              placeholder={"Senha"}
+              onChange={handlerChange}
+            />
+            <p>Esqueci minha senha </p>
+
+            <ReCaptcha>
+              <input type="checkbox" required />
+              <span>Não sou um robô</span>
+              <img style={{ width: "100px" }} src={reCaptcha} alt="logo" />
+            </ReCaptcha>
+
+            <button type="submit" disabled={!InputValidator() || loading}>
+              Entrar
+            </button>
+            <a href="/cadastro">Cadastre-se</a>
+          </div>
+        </form>          
+        </div>
       )}
     </ContainerLogin>
     </>
