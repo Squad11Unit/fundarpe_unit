@@ -111,3 +111,63 @@ export const SectionTwo = styled.div`
     }
 `;
 
+export const SectionThree = styled.div`
+    article {
+        background-color: #D9D9D9;
+        margin-top: 30px;
+        margin-left: -25px;
+        width: 103%;
+        padding: 25px 20px 70px 30px;
+
+        div {
+            margin: -10px 0px 15px 1050px;
+            
+            svg {
+                width: 110%;
+                height: 110%;
+              
+            }
+        }
+
+        h3 {
+            font-family: Source Sans 3;
+            font-weight: bold;
+            color: #011A3F;
+            margin-top: -50px;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-right: 15px; 
+            font-style: italic;
+        }
+    }
+
+    div {
+        margin-left: 350px;
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+        }
+        svg {
+            margin-right: 10px;
+        }
+        .botão1{
+            color:#FFFFFF;
+            background-color: #E31F28;
+            font-family: Source Sans 3;
+            font-weight: bold;
+            margin: 50px 50px 0px -10px;
+        }
+        .botão2{
+            color:#FFFFFF;
+            background-color: #011A3F;
+            font-family: Source Sans 3;
+            font-weight: bold;
+            margin: 50px 0px 0px 0px;
+        }
+
+    }
+`;
+

@@ -1,7 +1,7 @@
-import { Container, SectionOne, SectionTwo, Title, Image, FileIcon, LampIcon } from "./styled"
+import { Container, SectionOne, SectionTwo, SectionThree, Title, Image, FileIcon, LampIcon } from "./styled"
 import parecerista from "../../assets/editalPage/parecerista.png"
 import publicado from "../../assets/editalPage/publicado.png"
-import { FileText, Lightbulb, Download } from "react-bootstrap-icons"
+import { FileText, Lightbulb, Download, PencilSquare} from "react-bootstrap-icons"
 import Header from "../../components/Header";
 import { Button } from "react-bootstrap";
 
@@ -58,6 +58,20 @@ const PublicNotice = ({ title, image, registrationDetails }) => {
 
                     </article>
                 </SectionTwo>
+                <SectionThree>
+                    <article>
+                        <div>
+                            <PencilSquare/>
+                        </div>
+                        <h3>Inscrições abertas</h3>
+                        <p>O objetivo deste edital é a seleção e o credenciamento de profissionais, pessoas físicas e/ou Microempreendedores Individuais – MEI, residentes ou não em Pernambuco, para compor o Banco de Pareceristas, que possam vir a exercer as atividades de análise, classificação e emissão de parecer técnico sobre projetos culturais no âmbito dos Editais do Fundo Pernambucano de Incentivo à Cultura - Funcultura, desde que atendidos os requisitos descritos neste Instrumento Convocatório, visando à futura e eventual contratação dos mesmos.</p>
+                    </article>   
+                    <div>
+                        <button class="botão1" variant="secondary" size="sm"><Download />Baixar o regulamento</button>
+                        <button class="botão2">Inscreva-se</button>    
+                    </div>
+                </SectionThree>
+
             </Container>
         </>
     )
