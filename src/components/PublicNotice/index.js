@@ -2,13 +2,11 @@ import { Container, SectionOne, SectionTwo, SectionThree, Title, Image, FileIcon
 import parecerista from "../../assets/editalPage/parecerista.png"
 import publicado from "../../assets/editalPage/publicado.png"
 import { FileText, Lightbulb, Download, PencilSquare} from "react-bootstrap-icons"
-import Header from "../../components/Header";
 import { Button } from "react-bootstrap";
 
 const PublicNotice = ({ title, image, registrationDetails }) => {
     return (
         <>
-            <Header userName="Ana Silva" />
             <Container>
                 <SectionOne>
                     <Title>

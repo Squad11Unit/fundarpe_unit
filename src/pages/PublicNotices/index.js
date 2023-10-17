@@ -1,13 +1,13 @@
-import PublicNotice from "../../components/PublicNotice"; 
+import PublicNotice from "../../components/PublicNotice";
+import Header from "../../components/Header";
 
 const PublicNotices = () => {
   return (
     <div>
-      <PublicNotice>      
-        
-      </PublicNotice>
+      <Header />
+      <PublicNotice />
     </div>
   );
-}
+};
 
 export default PublicNotices;
