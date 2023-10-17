@@ -35,7 +35,7 @@ export const editalCard = [
       text: "Banner do edital",
       image: funcultura,
       description: "7° EDITAL DO PROGRAMA DE FOMENTO À PRODUÇÃO EM MÚSICA DE PERNAMBUCO",
-      day: 1,
+      day: 10,
       month: "MAI",
       URL: "",
     },
