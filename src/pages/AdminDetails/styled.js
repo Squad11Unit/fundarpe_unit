@@ -43,42 +43,61 @@ export const Description = styled.div`
       margin-top: 0.3rem;
     }
   }
+  @media only screen and (min-device-width: 1399px) {
+    margin: -12vh 0 50px 25vw;
+  }
+  @media only screen and (max-device-width: 1440px) {
+    margin: -15vh 0 0 32vw;
+  }
+  @media only screen and (max-device-width: 1024px) {
+    font-size: 15px;
+    margin: -15vh 0 0 45vw;
+  }
+  @media only screen and (max-device-width: 768px) {
+    margin: -15vw 0 0 60vw;
+  }
+  @media only screen and (max-device-width: 425px) {
+    font-size: 10px;
+    margin: 0 0 0 10px;
+  }
 `;
 
 export const ContainerTable = styled.div`
-  padding: 0 80px;
+  width: 100%;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
 `;
 
 export const Table = styled.table`
   font-size: 20px;
-  width: 100vw;
-  margin-top: 60px;
-  
+  width: 90%;
+  margin: 20px 0 20px 60px;
+  th{
+    width 15%;
+    text-align: center;
+  }
+  @media only screen end (max-device-width: 768px){
+    margin: 20px 0 20px 30px;
+  };
+  @media only screen end (max-device-width: 425px){
+    margin: 0 0 0 10px;
+    font-size: 15px;
+  };
 `;
 
 export const ThOne = styled.th`
   border-left: solid 3px red;
-  padding: 0 70px;
-    width: 80%;
 `;
 export const ThTwo = styled.th`
   border-left: solid 3px yellow;
-  padding: 0 70px;
-    width: 80%;
 `;
 export const ThTree = styled.th`
   border-left: solid 3px green;
-  padding: 0 70px;
-    width: 80%;
 `;
 export const ThFour = styled.th`
   border-left: solid 3px #5353ec;
-  padding: 0 70px;
-    width: 80%;
 `;
 export const ThFive = styled.th`
   border-left: solid 3px blue;
-  padding: 0 70px;
-    width: 80%;
   border-right: solid 3px orange;
 `;
