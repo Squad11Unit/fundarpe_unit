@@ -50,7 +50,7 @@ function Home() {
           />
         ))}
       </CardBox>
-      <button className={"b1"}>Ver mais</button>
+      <button className={"b1"}>Ver mais.</button>
 
       {/* :TODO SOBRE-FUNCULTURA <h1>O funcultura</h1> */}
       
