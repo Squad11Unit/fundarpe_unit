@@ -13,6 +13,33 @@ export const ContainerHome = styled.body`
     background-color: white;
     margin: 0 41vw;
   }
+  .flex_container{
+    display: column;
+    justify-content: center;
+    gap: -20px;
+    margin: 100px 180px;
+  }
+  .flex_section{
+    display: flex;
+  }
+  .flex_imag{
+    display: column;
+  }
+  .color{
+    background-color: #F16226;
+    flex-direction: column!;
+    border-radius: 0 0 5px 5px;
+    height: 170px;
+  }
+  h2 {
+    color: #ffff;
+    padding: 30px 30px 0;
+  }
+  h4 {
+    color: #ffff;
+    padding: 0 29px 2px;
+  }
+  
 `;
 
 export const SelectGroup = styled.div`
