@@ -7,6 +7,9 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
 import { editalCard } from "../../components/Card/editalCard";
 import { eventsCard } from "../../components/Card/eventsCard";
+import Banner1 from "../../assets/Principal/banner/Banner1.png";
+import Banner2 from "../../assets/Principal/banner/Banner2.png";
+
 
 function Home() {
   return (
@@ -53,7 +56,44 @@ function Home() {
       <button className={"b1"}>Ver mais</button>
 
       {/* :TODO SOBRE-FUNCULTURA <h1>O funcultura</h1> */}
-      
+      <h1>Funcultura</h1>
+
+      <div className={"flex_container"}>
+        <div className={"flex_section"}>
+          <div className={"flex_imag"}>
+            <div>
+              <img
+                className="bloco_1"
+                width="401"
+                height="200"
+                src={Banner1}
+                alt="rvrfvfgrvfgr"
+              ></img>
+            </div>
+            <img
+              className="bloco_3"
+              width="401"
+              height="200"
+              src={Banner2}
+              alt="rvrfvfgrvfgr"
+            ></img>
+          </div>
+          <iframe
+            width="705.100"
+            height="400"
+            src="https://www.youtube.com/embed/abHjagvHmtA?si=EJKRaqZ5Qy_Sw1AN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className={"color"}>
+          <h2>Seja parte dessa iniciativa!</h2>
+          <h4>conheça os nossos projetos, vem fortalecer nossa cultura</h4>
+        </div>
+      </div>
+
       <h1>Eventos</h1>
       <CardBox>
         {eventsCard.map((item) => (
