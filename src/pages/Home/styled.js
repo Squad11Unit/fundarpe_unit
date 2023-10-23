@@ -64,3 +64,52 @@ export const CardBox = styled.div`
   gap: 50px;
   margin: 50px 140px;
 `;
+
+export const AboutBox = styled.div`
+margin-top: 80px;
+@media only screen and (max-device-width: 1024px) {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+a{
+  text-decoration: none;
+  color: #011A3F;
+  margin-left: 9.375rem;
+  font-weight: 700;
+  font-size: 2.813rem;
+  @media only screen and (max-device-width: 1024px) {
+    margin-left: 0.625rem;
+    text-align: center;
+  }
+  
+}
+div{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.125rem;
+  img {
+    @media only screen and (max-device-width: 425px) {
+    width: 18.75rem;
+    }  
+  }
+  p{
+    width: 50rem;
+    padding: 2.188rem;
+    border-radius: 0.313rem;
+    font-size: 1.563rem;
+    line-height: 2.188rem;
+    text-align: justify;
+    background-color: #FFFFFF;
+    margin: 0.313rem 0 0 -1.875rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem 0.063rem #D3D3D3;
+    
+    @media only screen and (max-device-width: 1024px) {
+      margin: 0 auto;
+      box-shadow: none;
+    }
+     }
+}
+`;
