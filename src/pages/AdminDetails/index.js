@@ -9,8 +9,12 @@ import {
   ThFour,
   ThFive,
   Documentations,
+  WrapInscription,
+  WrapCard,
+  SelectGroup,
+  WrapDoc,
 } from "./styled";
-import { CardBox, SelectGroup } from "../Home/styled";
+import { ButtonBox, CardBox } from "../Home/styled";
 import CardHome from "../../components/Card";
 import { editalCard } from "../../components/Card/editalCard";
 import { categorias, meses } from "../Home/constants";
@@ -21,13 +25,16 @@ import ProfileHeaders from "../../components/Profiles/header";
 
 function AdminDetails() {
   const [inscricoes, setIncricoes] = useState(true);
-  const [documentacoes, setDocumentacoes] = useState(true);
+  const [documentacoes, setDocumentacoes] = useState(false);
 
   const mostrarCard = () => {
     setIncricoes(true);
+    setDocumentacoes(false);
   };
+
   const mostrarDoc = () => {
     setIncricoes(false);
+    setDocumentacoes(true);
   };
 
   return (
@@ -40,7 +47,7 @@ function AdminDetails() {
             <ThOne>E-mail</ThOne>
             <ThTwo
               onClick={mostrarCard}
-              style={{ backgroundColor: inscricoes ? "#f8e6d1" : "#00fffff" }}
+              style={{ backgroundColor: inscricoes ? "#f8e6d1" : "white" }}
             >
               Inscrições
             </ThTwo>
@@ -48,7 +55,7 @@ function AdminDetails() {
             <ThFour>Pareceristas</ThFour>
             <ThFive
               onClick={mostrarDoc}
-              style={{ backgroundColor: !inscricoes ? "#f8e6d1" : "#00fffff" }}
+              style={{ backgroundColor: documentacoes ? "#f8e6d1" : "white" }}
             >
               Documentações
             </ThFive>
@@ -56,7 +63,8 @@ function AdminDetails() {
         </Table>
       </ContainerTable>
       {inscricoes && (
-        <>
+        <WrapInscription>
+          <h1>Inscrição</h1>
           <SelectGroup>
             <DropdownButton title="Mês">
               {meses.map((mes, index) => (
@@ -69,71 +77,78 @@ function AdminDetails() {
               ))}
             </DropdownButton>
           </SelectGroup>
-          <CardBox>
-            {editalCard.map((item) => (
-              <CardHome
-                key={item.id}
-                URL={item.URL}
-                text={item.text}
-                title={item.title}
-                image={item.image}
-                month={item.month}
-                day={item.day}
-                description={item.description}
-              />
-            ))}
-          </CardBox>
-        </>
+          <WrapCard>
+            <CardBox>
+              {editalCard.map((item) => (
+                <CardHome
+                  key={item.id}
+                  URL={item.URL}
+                  text={item.text}
+                  title={item.title}
+                  image={item.image}
+                  month={item.month}
+                  day={item.day}
+                  description={item.description}
+                />
+              ))}
+            </CardBox>
+            <ButtonBox>
+              <button className={"b1"}>Ver mais</button>
+            </ButtonBox>
+          </WrapCard>
+        </WrapInscription>
       )}
-      {!inscricoes && (
-        <Documentations>
-          <h1>Documentação</h1>
-          <Form.Select size="lg">
-            <option>Renovação PCP</option>
-          </Form.Select>
-          <table>
-            <tr>
-              <td>bella.lima@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-            <tr>
-              <td>maria.souza@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-            <tr>
-              <td>leandro.neto@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-            <tr>
-              <td>Lucas.bento@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-            <tr>
-              <td>kelly.oliveira@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-            <tr>
-              <td>ella.lira@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-            <tr>
-              <td>hellan.pinho@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-            <tr>
-              <td>bruno.camara@email.com</td>
-              <td>CPF: xxx - xxx - xxx - xx</td>
-              <td>Matricula :000000261</td>
-            </tr>
-          </table>
-        </Documentations>
+      {documentacoes && (
+        <WrapDoc>
+          <Documentations>
+            <h1>Documentação</h1>
+            <Form.Select size="lg">
+              <option>Renovação PCP</option>
+            </Form.Select>
+            <table>
+              <tr>
+                <td>bella.lima@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+              <tr>
+                <td>maria.souza@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+              <tr>
+                <td>leandro.neto@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+              <tr>
+                <td>Lucas.bento@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+              <tr>
+                <td>kelly.oliveira@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+              <tr>
+                <td>ella.lira@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+              <tr>
+                <td>hellan.pinho@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+              <tr>
+                <td>bruno.camara@email.com</td>
+                <td>CPF: xxx - xxx - xxx - xx</td>
+                <td>Matricula: 000000261</td>
+              </tr>
+            </table>
+          </Documentations>
+        </WrapDoc>
       )}
     </div>
   );

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Banner = styled.img`
-  width: 100vw;
+  width: 100%;
 `;
 
 export const ProfilePicture = styled.img`
@@ -47,7 +47,7 @@ export const Description = styled.div`
     margin: -12vh 0 50px 25vw;
   }
   @media only screen and (max-device-width: 1440px) {
-    margin: -15vh 0 0 32vw;
+    margin: -15vh 0 0 35vw;
   }
   @media only screen and (max-device-width: 1024px) {
     font-size: 15px;
