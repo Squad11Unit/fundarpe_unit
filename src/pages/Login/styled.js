@@ -102,7 +102,8 @@ export const ReCaptcha = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 345px !important;
+  width: 370px !important;
+  padding-left: 1rem;
   margin: 1rem auto;
   width: 345px;
   height: 75px;

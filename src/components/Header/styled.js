@@ -10,6 +10,7 @@ export const HeaderContainer = styled.div`
   padding: 3.5rem 115px;
   align-items: center;
   img {
+    cursor:pointer;
     height: 100px;
   }
 `;

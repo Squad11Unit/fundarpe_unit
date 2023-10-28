@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Register from "../pages/Register";
 import PublicNotices from "../pages/PublicNotices";
-import Login from "../pages/Login";
+import Login from "../pages/Login/Login";
 import Account from "../pages/Account";
 import AdminDetails from "../pages/AdminDetails";
 

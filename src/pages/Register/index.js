@@ -5,7 +5,7 @@ import LoginHeader from "../../components/LoginHeader";
 import { Acessos } from "../Login/styled";
 import { ContainerRegister } from "./styled";
 import { useNavigate } from "react-router-dom";
-import { cpfMask, validatePassword } from "../../Utils/validations";
+import { cpfCnpjMask, validatePassword } from "../../Utils/validations";
 
 const Register = () => {
   const [agente, setAgente] = useState(true);
@@ -35,7 +35,7 @@ const Register = () => {
   }
 
   const handleCPF = (event) => {
-    setCpf(cpfMask(event.target.value))
+    setCpf(cpfCnpjMask(event.target.value))
   }
 
   const InputValidator = () => {

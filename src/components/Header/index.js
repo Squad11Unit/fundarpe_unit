@@ -2,13 +2,20 @@ import { useNavigate } from "react-router";
 import { HeaderContainer, InitialOptions } from "./styled";
 import logoheader from "../../assets/logoheader.png";
 
-function Header({ userName, institutions, login, buttonLogout, buttonRegister }) {
+function Header({
+  userName,
+  institutions,
+  login,
+  buttonLogout,
+  buttonRegister,
+}) {
   const navigate = useNavigate();
   const ClearAll = () => {
-    localStorage.removeItem("User");
+    localStorage.removeItem("User") || localStorage.removeItem("Administrador");
     navigate("/");
   };
-  return window.localStorage.getItem("User") ? (
+  return localStorage.getItem("User") ||
+    localStorage.getItem("Administrador") ? (
     <HeaderContainer>
       <img src={logoheader} alt="Logo do Funcultura" />
       <InitialOptions>
@@ -21,7 +28,7 @@ function Header({ userName, institutions, login, buttonLogout, buttonRegister })
     </HeaderContainer>
   ) : (
     <HeaderContainer>
-      <img src={logoheader} alt="Logo do Funcultura" />
+      <img src={logoheader} alt="Logo do Funcultura" onClick={() => navigate("/")}/>
       <InitialOptions>
         <a href="https://www.cultura.pe.gov.br/fundarpe/">{institutions}</a>
         <a href="/login">{login}</a>
