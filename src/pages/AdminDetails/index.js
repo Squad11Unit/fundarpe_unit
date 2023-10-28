@@ -1,21 +1,15 @@
 import Header from "../../components/Header";
-import banner from "../../assets/adminProfile/banner.png";
-import avatar from "../../assets/adminProfile/avatar.jpg";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import {
-  Banner,
   ContainerTable,
-  ProfilePicture,
-  Images,
-  Description,
   Table,
   ThOne,
   ThTwo,
   ThTree,
   ThFour,
   ThFive,
+  Documentations,
 } from "./styled";
-import { PencilSquare, PeopleFill } from "react-bootstrap-icons";
 import { CardBox, SelectGroup } from "../Home/styled";
 import CardHome from "../../components/Card";
 import { editalCard } from "../../components/Card/editalCard";
@@ -23,6 +17,7 @@ import { categorias, meses } from "../Home/constants";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
+import ProfileHeaders from "../../components/Profiles/header";
 
 function AdminDetails() {
   const [inscricoes, setIncricoes] = useState(true);
@@ -38,25 +33,7 @@ function AdminDetails() {
   return (
     <div>
       <Header userName="Roberto Silva" />
-      <Banner
-        src={banner}
-        alt="Rostos de duas pessoas com máscaras e chapéu coloridos no carnaval"
-      />
-      <Images>
-        <ProfilePicture src={avatar} alt="Foto de perfil do usuário" />
-        <PencilSquare />
-      </Images>
-      <Description>
-        <h1>Roberto Silva</h1>
-        <div>
-          <PeopleFill />
-          <p>MÚSICO PERNAMBUCANO</p>
-        </div>
-        <div>
-          <PencilSquare />
-          <p>Editar</p>
-        </div>
-      </Description>
+      <ProfileHeaders />
       <ContainerTable>
         <Table>
           <tr>
@@ -109,16 +86,12 @@ function AdminDetails() {
         </>
       )}
       {!inscricoes && (
-        <div>
+        <Documentations>
+          <h1>Documentação</h1>
           <Form.Select size="lg">
             <option>Renovação PCP</option>
           </Form.Select>
           <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
             <tr>
               <td>bella.lima@email.com</td>
               <td>CPF: xxx - xxx - xxx - xx</td>
@@ -160,7 +133,7 @@ function AdminDetails() {
               <td>Matricula :000000261</td>
             </tr>
           </table>
-        </div>
+        </Documentations>
       )}
     </div>
   );
