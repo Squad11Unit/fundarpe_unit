@@ -1,12 +1,15 @@
 import CardHome from "../../components/Card";
 import CarouselHome from "../../components/Carousel";
 import Header from "../../components/Header";
-import { SelectGroup, CardBox, ContainerHome } from "./styled";
+import { SelectGroup, CardBox, ContainerHome, AboutBox } from "./styled";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
 import { editalCard } from "../../components/Card/editalCard";
 import { eventsCard } from "../../components/Card/eventsCard";
+import Banner1 from "../../assets/Principal/banner/Banner1.png";
+import Banner2 from "../../assets/Principal/banner/Banner2.png";
+import bridge from "../../assets/ponteMauricioDeNassau.png";
 
 function Home() {
   return (
@@ -52,8 +55,52 @@ function Home() {
       </CardBox>
       <button className={"b1"}>Ver mais</button>
 
-      {/* :TODO SOBRE-FUNCULTURA <h1>O funcultura</h1> */}
-      
+      <AboutBox>
+        <a href="https://www.cultura.pe.gov.br/funcultura/" target="_blank">O FUNCULTURA</a>
+        <div>
+          <img src={bridge} alt="imagem do Rio Capibaribe ao fundo a ponte Mauricio de Nassau"/>
+          <p>
+          O Fundo Pernambucano de Incentivo à Cultura (Funcultura PE) foi instituído por meio da Lei 12.310, de 19 de dezembro de 2002, tendo seu primeiro edital lançado em 2003. O fundo público recebe recursos oriundos da arrecadação de Imposto sobre Circulação de Mercadorias e Serviços (ICMS) pelo Governo do Estado e destina-os ao financiamento direto de projetos artísticos e culturais por meio de seleção pública. Este modelo está permitindo à democratização do acesso a cultura, através do fomento a produção artística e da difusão de bens culturais.
+          </p>
+        </div>
+      </AboutBox>
+
+      <div className={"flex_container"}>
+        <div className={"flex_section"}>
+          <div className={"flex_imag"}>
+            <div>
+              <img
+                className="bloco_1"
+                width="401"
+                height="200"
+                src={Banner1}
+                alt="rvrfvfgrvfgr"
+              ></img>
+            </div>
+            <img
+              className="bloco_3"
+              width="401"
+              height="200"
+              src={Banner2}
+              alt="rvrfvfgrvfgr"
+            ></img>
+          </div>
+          <iframe
+            width="705.100"
+            height="400"
+            src="https://www.youtube.com/embed/abHjagvHmtA?si=EJKRaqZ5Qy_Sw1AN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className={"color"}>
+          <h2>Seja parte dessa iniciativa!</h2>
+          <h4>conheça os nossos projetos, vem fortalecer nossa cultura</h4>
+        </div>
+      </div>
+
       <h1>Eventos</h1>
       <CardBox>
         {eventsCard.map((item) => (

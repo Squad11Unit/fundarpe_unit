@@ -13,6 +13,33 @@ export const ContainerHome = styled.body`
     background-color: white;
     margin: 0 41vw;
   }
+  .flex_container{
+    display: column;
+    justify-content: center;
+    gap: -20px;
+    margin: 100px 180px;
+  }
+  .flex_section{
+    display: flex;
+  }
+  .flex_imag{
+    display: column;
+  }
+  .color{
+    background-color: #F16226;
+    flex-direction: column!;
+    border-radius: 0 0 5px 5px;
+    height: 170px;
+  }
+  h2 {
+    color: #ffff;
+    padding: 30px 30px 0;
+  }
+  h4 {
+    color: #ffff;
+    padding: 0 29px 2px;
+  }
+  
 `;
 
 export const SelectGroup = styled.div`
@@ -36,4 +63,53 @@ export const CardBox = styled.div`
   align-items: center;
   gap: 50px;
   margin: 50px 140px;
+`;
+
+export const AboutBox = styled.div`
+margin-top: 80px;
+@media only screen and (max-device-width: 1024px) {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+a{
+  text-decoration: none;
+  color: #011A3F;
+  margin-left: 9.375rem;
+  font-weight: 700;
+  font-size: 2.813rem;
+  @media only screen and (max-device-width: 1024px) {
+    margin-left: 0.625rem;
+    text-align: center;
+  }
+  
+}
+div{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.125rem;
+  img {
+    @media only screen and (max-device-width: 425px) {
+    width: 18.75rem;
+    }  
+  }
+  p{
+    width: 50rem;
+    padding: 2.188rem;
+    border-radius: 0.313rem;
+    font-size: 1.563rem;
+    line-height: 2.188rem;
+    text-align: justify;
+    background-color: #FFFFFF;
+    margin: 0.313rem 0 0 -1.875rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem 0.063rem #D3D3D3;
+    
+    @media only screen and (max-device-width: 1024px) {
+      margin: 0 auto;
+      box-shadow: none;
+    }
+     }
+}
 `;
