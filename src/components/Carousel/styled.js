@@ -23,7 +23,6 @@ h4, h5, p {
     font-size: 10px;
   }
   @media only screen and (max-device-width: 800px) {
-    //border: solid 1px red;
     font-size: 11px;
     width: 120%;
     line-height: none;

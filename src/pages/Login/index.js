@@ -5,6 +5,7 @@ import Input from "../../components/Forms/Input";
 import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
 import reCaptcha from "../../assets/Form/reCaptcha.png";
 import Header from "../../components/Header";
+import LoginHeader from "../../components/LoginHeader";
 
 const Login = () => {
   const [form, setForm] = useState([]);
@@ -60,6 +61,7 @@ const Login = () => {
   return (
     <>
     <Header/>
+    <LoginHeader type="Entre" name="Entrar"/>
     <ContainerLogin>
       <Acessos>
         <h4
