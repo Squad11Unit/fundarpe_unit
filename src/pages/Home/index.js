@@ -1,7 +1,13 @@
 import CardHome from "../../components/Card";
 import CarouselHome from "../../components/Carousel";
 import Header from "../../components/Header";
-import { SelectGroup, CardBox, ContainerHome, AboutBox } from "./styled";
+import {
+  SelectGroup,
+  CardBox,
+  ContainerHome,
+  AboutBox,
+  ButtonBox,
+} from "./styled";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
@@ -53,14 +59,28 @@ function Home() {
           />
         ))}
       </CardBox>
-      <button className={"b1"}>Ver mais</button>
-
+      <ButtonBox>
+        <button className={"b1"}>Ver mais</button>
+      </ButtonBox>
       <AboutBox>
-        <a href="https://www.cultura.pe.gov.br/funcultura/" target="_blank">O FUNCULTURA</a>
+        <a href="https://www.cultura.pe.gov.br/funcultura/" target="_blank">
+          O FUNCULTURA
+        </a>
         <div>
-          <img src={bridge} alt="imagem do Rio Capibaribe ao fundo a ponte Mauricio de Nassau"/>
+          <img
+            src={bridge}
+            alt="imagem do Rio Capibaribe ao fundo a ponte Mauricio de Nassau"
+          />
           <p>
-          O Fundo Pernambucano de Incentivo à Cultura (Funcultura PE) foi instituído por meio da Lei 12.310, de 19 de dezembro de 2002, tendo seu primeiro edital lançado em 2003. O fundo público recebe recursos oriundos da arrecadação de Imposto sobre Circulação de Mercadorias e Serviços (ICMS) pelo Governo do Estado e destina-os ao financiamento direto de projetos artísticos e culturais por meio de seleção pública. Este modelo está permitindo à democratização do acesso a cultura, através do fomento a produção artística e da difusão de bens culturais.
+            O Fundo Pernambucano de Incentivo à Cultura (Funcultura PE) foi
+            instituído por meio da Lei 12.310, de 19 de dezembro de 2002, tendo
+            seu primeiro edital lançado em 2003. O fundo público recebe recursos
+            oriundos da arrecadação de Imposto sobre Circulação de Mercadorias e
+            Serviços (ICMS) pelo Governo do Estado e destina-os ao financiamento
+            direto de projetos artísticos e culturais por meio de seleção
+            pública. Este modelo está permitindo à democratização do acesso a
+            cultura, através do fomento a produção artística e da difusão de
+            bens culturais.
           </p>
         </div>
       </AboutBox>
