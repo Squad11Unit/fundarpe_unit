@@ -1,9 +1,13 @@
+import PublicNotice from "../../components/PublicNotice";
+import Header from "../../components/Header";
+
 const PublicNotices = () => {
   return (
     <div>
-      <h1>Detalhe de edital</h1>
+      <Header />
+      <PublicNotice />
     </div>
   );
-}
+};
 
 export default PublicNotices;
