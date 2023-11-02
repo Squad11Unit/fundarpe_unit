@@ -18,7 +18,6 @@ const AppRoutes = () => {
         <Route path="/edital/id" element={<PublicNotices />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/admin" element={<AdminDetails />} />
-        <Route path="/principal_admin" element={<AdminDetails />} />
       </Routes>
     </BrowserRouter>
   );

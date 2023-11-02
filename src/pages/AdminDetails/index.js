@@ -1,13 +1,6 @@
 import Header from "../../components/Header";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import {
-  ContainerTable,
-  Table,
-  ThOne,
-  ThTwo,
-  ThTree,
-  ThFour,
-  ThFive,
   Documentations,
   WrapInscription,
   WrapCard,
@@ -22,6 +15,8 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import ProfileHeaders from "../../components/Profiles/header";
+import avatar from "../../assets/Profile/avatar.jpg"
+
 
 function AdminDetails() {
   const [inscricoes, setIncricoes] = useState(true);
@@ -40,28 +35,20 @@ function AdminDetails() {
   return (
     <div>
       <Header userName="Roberto Silva" />
-      <ProfileHeaders />
-      <ContainerTable>
-        <Table>
-          <tr>
-            <ThOne>E-mail</ThOne>
-            <ThTwo
-              onClick={mostrarCard}
-              style={{ backgroundColor: inscricoes ? "#f8e6d1" : "white" }}
-            >
-              Inscrições
-            </ThTwo>
-            <ThTree>Notificações</ThTree>
-            <ThFour>Pareceristas</ThFour>
-            <ThFive
-              onClick={mostrarDoc}
-              style={{ backgroundColor: documentacoes ? "#f8e6d1" : "white" }}
-            >
-              Documentações
-            </ThFive>
-          </tr>
-        </Table>
-      </ContainerTable>
+      <ProfileHeaders
+       photo={avatar}
+       name="Roberto Silva"
+        occupation="MÚSICO PERNAMBUCANO"
+        th1="E-mail"
+        click1={mostrarCard}
+        whether1={inscricoes}
+        th2="Inscrições"
+        th3="Notificações"
+        th4="Pareceristas"
+        click5={mostrarDoc}
+        whether5={documentacoes}
+        th5="Documentações"
+      />
       {inscricoes && (
         <WrapInscription>
           <h1>Inscrição</h1>
