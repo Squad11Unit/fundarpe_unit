@@ -42,6 +42,23 @@ const Register = () => {
     return validatePassword(form.password)
   }
 
+  const checkPassword = (event) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    })
+
+    const password = document.querySelector('input[name=password]')
+    const check = document.querySelector('input[name=check]')
+
+    if (check.value === password.value) {
+      check.setCustomValidity('')
+    } else {
+      check.setCustomValidity("As senhas não conferem.")
+    }
+
+  }
+
   return (
     <div>
       <Header />
@@ -66,7 +83,7 @@ const Register = () => {
         <Form.Control required size="lg" type="text" placeholder="Nome" />
         <Form.Control required type="text" size="lg" placeholder="Sobrenome" />
         <Form.Control required type="text" size="lg" placeholder="País de origem" />
-        <Form.Control required type="text" size="lg" placeholder="CPF" onChange={handleCPF} value={cpf} name={"cpf"} />
+        <Form.Control required type="text" size="lg" placeholder="CPF/CNPJ" onChange={handleCPF} value={cpf} name={"cpf"} maxLength="14"/>
         {!agente && (
           <Form.Control
             required
@@ -93,7 +110,8 @@ const Register = () => {
           value={form.password}
           size="lg"
           placeholder="Senha"
-          onChange={handleChange}
+          onChange={checkPassword}
+          maxLength={12}
         />
         <span>Mínimo 6 caracteres. Utilize no mínimo uma letra maiúscula, uma minúscula, um caraceter especial e numeros.</span>
         <Form.Control
@@ -102,6 +120,9 @@ const Register = () => {
           type="password"
           size="lg"
           placeholder="Repetir senha"
+          onChange={checkPassword}
+          name="check"
+          value={form.check}
         />
         <Form.Check
           type="switch"
@@ -115,7 +136,6 @@ const Register = () => {
         />
         <Form.Check
           required
-
           type="switch"
           id="costom-switch"
           label="Li e aceito a, Política de privacidade Condições gerais de utilização e Política de Cookies."
