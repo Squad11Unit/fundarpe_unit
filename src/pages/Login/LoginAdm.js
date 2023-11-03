@@ -1,9 +1,9 @@
-import Input from "../../components/Forms/Input";
 import { ContainerLogin, ReCaptcha } from "./styled";
 import { useNavigate } from "react-router-dom";
 import reCaptcha from "../../assets/Form/reCaptcha.png";
 import { useState } from "react";
 import { validatePassword } from "../../Utils/validations";
+import { Form } from "react-bootstrap";
 
 function LoginAdm() {
   const [form, setForm] = useState([]);
@@ -50,7 +50,7 @@ function LoginAdm() {
     <ContainerLogin>
       <form onSubmit={handleSubmitUserAdm}>
         <div>
-          <Input
+          <Form.Control
             type="tel"
             value={matricula}
             name={"matricula"}
@@ -59,7 +59,7 @@ function LoginAdm() {
             required
           />
 
-          <Input
+          <Form.Control
             type={"password"}
             name={"password"}
             value={form.password}
