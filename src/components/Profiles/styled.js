@@ -11,28 +11,27 @@ export const ProfilePicture = styled.img`
 `;
 
 export const Images = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: -140px 0 0 175px;
-  div{
-    display: flex;
-    gap: 0.5rem;
-    svg:nth-child(2){
-      margin-top: 0.2rem;
-      color: white;
-      width: 2.8rem;
-      height: 2.2rem;
-    }
-    button{
+  img {
+    margin: -140px 0 0 175px;
+  }
+  div {
+    text-align: end;
+    margin: -11.25rem 1rem 0 0;
+    button {
       color: white;
       border-color: white;
       height: 2.5rem;
       width: 8rem;
-      svg{
+      svg {
         margin: 0 0.6rem 0 -0.3rem;
         width: 2.8rem;
         height: 1.8rem;
       }
+    }
+    svg {
+      color: white;
+      width: 2.5rem;
+      height: 3rem;
     }
   }
 `;
@@ -40,9 +39,9 @@ export const Images = styled.div`
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
-  margin: -120px 0 0 36vw;
+  margin: -120px 0 0 36rem;
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   div {
     display: flex;
