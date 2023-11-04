@@ -39,7 +39,9 @@ export const Images = styled.div`
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
-  margin: -120px 0 0 36rem;
+  margin: 1rem 0 ;
+  position: relative;
+  left: 30rem;
   h1 {
     margin-bottom: 10px;
   }
@@ -57,23 +59,7 @@ export const Description = styled.div`
       margin-top: 0.3rem;
     }
   }
-  @media only screen and (min-device-width: 1399px) {
-    margin: -12vh 0 50px 25vw;
-  }
-  @media only screen and (max-device-width: 1440px) {
-    margin: -15vh 0 0 35vw;
-  }
-  @media only screen and (max-device-width: 1024px) {
-    font-size: 15px;
-    margin: -15vh 0 0 45vw;
-  }
-  @media only screen and (max-device-width: 768px) {
-    margin: -15vw 0 0 60vw;
-  }
-  @media only screen and (max-device-width: 425px) {
-    font-size: 10px;
-    margin: 0 0 0 10px;
-  }
+
 `;
 export const ContainerTable = styled.div`
   width: 100%;
