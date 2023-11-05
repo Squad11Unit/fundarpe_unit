@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerFooter = styled.div`
     width: 100%;
     justify-content: center;
-    
+    font-family: 'Open Sans';
 
     *{
         margin: 0;
@@ -14,6 +14,7 @@ export const ContainerFooter = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        height: 300px;
     }
        
     .barra-colorida > img{
@@ -27,7 +28,6 @@ export const ContainerFooter = styled.div`
         height: 133px;
     }
     .logos-funpe > img {
-        position: absolute;
         bottom: 1px;
         width: 42%;
         height: 123px;
@@ -35,25 +35,21 @@ export const ContainerFooter = styled.div`
     }
 
     .conteudo{
-        display: inline-flex;
-        
-        margin-between: 10px
-
+        display: flex;
+            h1{
+                margin: 0 0 10px 0;
+            }
     }
 
     .institucional{
-        margin-left: 2px
-        position: relative;
         padding: 2rem;
         align: right;
         
     }
     .institucional > h1{
-        position: relative;
         color: #FFF;
-        font-family: Open Sans;
         font-size: 32px;
-        margin: 
+        margin: 60px, 60px, 15px, 0;
         
 
     }
@@ -67,7 +63,6 @@ export const ContainerFooter = styled.div`
     }
     .fundarpe {
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -75,7 +70,6 @@ export const ContainerFooter = styled.div`
     }
     .funcultura{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -93,13 +87,11 @@ export const ContainerFooter = styled.div`
     .linguagens > h1{
         position: relative;
         color: #FFF;
-        font-family: Open Sans;
         font-size: 32px;
 
     }
     .audio-visual{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -107,7 +99,6 @@ export const ContainerFooter = styled.div`
     }
     .geral{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -115,7 +106,6 @@ export const ContainerFooter = styled.div`
     }
     .microprojeto{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -123,7 +113,6 @@ export const ContainerFooter = styled.div`
     }
     .musica{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -141,12 +130,10 @@ export const ContainerFooter = styled.div`
     .suporte > h1{
         position: relative;
         color: #FFF;
-        font-family: Open Sans;
         font-size: 32px;
     }
     .expediente{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -154,7 +141,6 @@ export const ContainerFooter = styled.div`
     }
     .ouvidoria{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -162,7 +148,6 @@ export const ContainerFooter = styled.div`
     }
     .noticias{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -170,7 +155,6 @@ export const ContainerFooter = styled.div`
     }
     .politica-privacidade{
         color: #FFF;
-        font-family: Open Sans;
         font-size: 22px;
         font-style: normal;
         line-height: normal;
