@@ -6,6 +6,7 @@ import PublicNotices from "../pages/PublicNotices";
 import Login from "../pages/Login";
 import Account from "../pages/Account";
 import AdminDetails from "../pages/AdminDetails";
+import RegistrationForm from "../pages/RegistrationForm";
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="/admin" element={<AdminDetails />} />
         <Route path="/principal_admin" element={<AdminDetails />} />
+        <Route path="/edital/id/" element={<RegistrationForm />} />
       </Routes>
     </BrowserRouter>
   );
