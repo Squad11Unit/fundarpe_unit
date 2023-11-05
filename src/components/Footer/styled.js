@@ -4,11 +4,7 @@ export const ContainerFooter = styled.div`
     width: 100%;
     justify-content: center;
     font-family: 'Open Sans';
-
-    *{
-        margin: 0;
-        padding: 0;
-    }
+    padding-bottom: 10px;
     
     .fundo{
         display: flex;
@@ -23,22 +19,26 @@ export const ContainerFooter = styled.div`
         width: 100%;
         height: 60.274px;
     }
-    .ultimos-elementos{
-        width: 1440px;
-        height: 133px;
-    }
-    .logos-funpe > img {
-        bottom: 1px;
-        width: 42%;
-        height: 123px;
-        
-    }
 
     .conteudo{
         display: flex;
-            h1{
-                margin: 0 0 10px 0;
-            }
+        justify-content: space-around;
+        gap: 50px;
+        h1{
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        svg{
+            color: white;
+            position: relative;
+            left: 45%;
+            width: 25px;
+            height: 25px;
+            margin-bottom: 10px;
+        }
+        li{
+            text-decoration: none;
+        }
     }
 
     .institucional{
@@ -78,14 +78,11 @@ export const ContainerFooter = styled.div`
 
 
     .linguagens{
-        margin-left: 2px
-        position: relative;
         padding: 2rem;
         align: right;
         
     }
     .linguagens > h1{
-        position: relative;
         color: #FFF;
         font-size: 32px;
 
@@ -158,6 +155,20 @@ export const ContainerFooter = styled.div`
         font-size: 22px;
         font-style: normal;
         line-height: normal;
+    }
+
+    .social{
+        float: right;
+        position: relative;
+        top: 60px;
+        color: white;
+        display: flex;
+        gap: 15px;
+        margin-right: 30px;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
     }
     
 `;

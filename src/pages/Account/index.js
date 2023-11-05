@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ProfileHeaders from "../../components/Profiles/header";
 import avatarUser from "../../assets/Profile/avatar-user.jpg";
