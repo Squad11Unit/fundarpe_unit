@@ -50,7 +50,7 @@ function Home() {
         {editalCard.map((item) => (
           <CardHome
             key={item.id}
-            URL={item.URL}
+            URL={`/edital/${item.id}`}
             text={item.text}
             title={item.title}
             image={item.image}

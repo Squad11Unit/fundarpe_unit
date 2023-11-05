@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { cpfCnpjMask, validatePassword } from "../../Utils/validations";
 import { useNavigate } from "react-router-dom";
-import Input from "../../components/Forms/Input";
 import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
 import Header from "../../components/Header";
 import LoginAdm from "./LoginAdm";
 import reCaptcha from "../../assets/Form/reCaptcha.png";
+import { Form } from "react-bootstrap";
 
 const Login = () => {
   const [form, setForm] = useState([]);
   const [loading, setLoading] = useState(false);
   const [cpfCnpj, setCpfCnpj] = useState("");
-  // const [mask, setMask] = useState("");
+  
   const [agente, setAgente] = useState(true);
 
   const navigate = useNavigate();
@@ -46,7 +46,6 @@ const Login = () => {
 
   const handleCpfCnpj = (event, type) => {
     setCpfCnpj(cpfCnpjMask(event.target.value));
-    // setMask(type === "CPF");
   };
 
   const handlerChange = (event) => {
@@ -87,16 +86,17 @@ const Login = () => {
         {agente ? (
           <form onSubmit={handleSubmitUser}>
             <div>
-              <Input
+              <Form.Control
                 type="tel"
                 value={cpfCnpj}
                 required
                 name={"cpfCnpj"}
                 placeholder={"CPF/CNPJ"}
                 onChange={handleCpfCnpj}
+                maxLength={18}
               />
 
-              <Input
+              <Form.Control
                 type={"password"}
                 name={"password"}
                 value={form.password}

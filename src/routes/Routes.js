@@ -15,10 +15,9 @@ const AppRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Register />} />
         <Route path="/perfil" element={<Account />} />
-        <Route path="/edital/id" element={<PublicNotices />} />
+        <Route path="/edital/:id" element={<PublicNotices />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/admin" element={<AdminDetails />} />
-        <Route path="/principal_admin" element={<AdminDetails />} />
       </Routes>
     </BrowserRouter>
   );
