@@ -1,53 +1,94 @@
 import Header from "../../components/Header";
 import { ContainerFormPage } from "../../components/Forms/FormsPublicNo/styled";
 import FormsPublicNotices from "../../components/Forms/FormsPublicNo";
-import Logo from "../../assets/Form/edital2023.png";
-import Exem from "../../assets/Form/Group 323.png";
+import CheckBoxForm from "../../components/Forms/FormsPublicNo/checkBForm"
+import { publicForms } from "../../components/Forms/FormsPublicNo/PublicForms";
+import {publicFormsTwo} from "../../components/Forms/FormsPublicNo/publicFormsTwo"
+import { checkboxForm } from "../../components/Forms/FormsPublicNo/checkbox"
+import { FileText, Lightbulb, Download } from "react-bootstrap-icons";
+import { FileIcon, LampIcon} from "../../components/PublicNotice/styled";
+import { Button } from "react-bootstrap";
 
 function RegistrationForm() {
   return (
     <ContainerFormPage>
-    <sectionOne>
-      <Header />
-      <div className={"flex_body"}>
-        <div>
-          <img
-            className="bloco_1"
-            width="300 rem"
-            height="200 rem"
-            src={Logo}
-            alt="rvrfvfgrvfgr"
-          ></img>
+      
+      <sectionZero>
+        <Header />
+        <div className={"flex_body"}>
+          <div className={"text1"}>
+              <FileIcon>
+                <FileText />
+                <span>FUNCULTURA 2023</span>
+              </FileIcon>
+              <LampIcon>
+                <Lightbulb />
+                <span>Edital</span>
+              </LampIcon>
+              <h5>7° EDITAL DO PROGRAMA DE FOMENTO À PRODUÇÃO EM MÚSICA DE PERNAMBUCO - FUNCULTURA 2022/2023</h5>
+          </div>
+          <div className={"text2"}>
+            <h6>Número de Inscrição</h6>
+            <h6>00000000026</h6>
+          </div>
         </div>
-        <div className={"text1"}>
-        <img
-              className="bloco_3"
-              width="550 rem"
-              height="150 rem"
-              src={Exem}
-              alt="rvrfvfgrvfgr"
-            ></img>
-        </div>
-        <div className={"text2"}>
-          <h5>Número de Inscrição</h5>
-          <h6>00000000026</h6>
-        
-        </div>
-      </div>
-      </sectionOne>
-      <h1>Formulario de inscrição</h1>
-      <sectionTwo>
+      </sectionZero>
 
+      <h1>Formulário de Inscrição</h1>
+
+      <sectionOne>
+
+        <div className={"form_public"}>
+        <h4>1. Seus dados</h4>
+          {checkboxForm.map((item) => (
+          <CheckBoxForm
+            title={item.title}
+            text={item.text}
+          />
+        ))}
+        </div>
+      </sectionOne>
+
+      <sectionTwo>
+        <div className={"form_public"}>
+        <h4>1. Seus dados</h4>
+          {publicForms.map((item) => (
+          <FormsPublicNotices
+            title={item.title}
+            text={item.text}
+          />
+        ))}
+        </div>
       </sectionTwo>
 
-      <sectionTree>
+      <sectionThree>
       <div className={"form_public"}>
-        <FormsPublicNotices />
+        <h4>2. Autodeclaração</h4>
+          {publicFormsTwo.map((item) => (
+          <FormsPublicNotices
+            title={item.title}
+            text={item.text}
+          />
+        ))}
+        </div>
+      </sectionThree>
+
+      <sectionFour>
+
+      <div className={"threeForm"}>
+        <h4>Anexar documentos</h4>
+        <Download className={"iconD"}/>
+        <div className={"load"}>
+            <p>Arraste ou selecione um documento max. 1 - max. 10 - MB formato PDF /DOC/ DOCX</p>
+              <Button className="b1">Salvar</Button>
+            </div>
       </div>
-      </sectionTree>
+      <Button className={"bfinish"}>Finalizar Inscrição</Button>
+
+      </sectionFour>
+
     </ContainerFormPage>
   );
-
 }
 
 export default RegistrationForm;

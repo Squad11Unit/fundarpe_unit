@@ -1,13 +1,7 @@
 import CardHome from "../../components/Card";
 import CarouselHome from "../../components/Carousel";
 import Header from "../../components/Header";
-import {
-  SelectGroup,
-  CardBox,
-  ContainerHome,
-  AboutBox,
-  ButtonBox,
-} from "./styled";
+import { SelectGroup, CardBox, ContainerHome, AboutBox, ButtonBox } from "./styled";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";

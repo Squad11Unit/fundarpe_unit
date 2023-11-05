@@ -19,7 +19,7 @@ const AppRoutes = () => {
         <Route path="/edital/:id" element={<PublicNotices />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/admin" element={<AdminDetails />} />
-        <Route path="/edital/id/" element={<RegistrationForm />} />
+        <Route path="/form/id/" element={<RegistrationForm />} />
       </Routes>
     </BrowserRouter>
   );
