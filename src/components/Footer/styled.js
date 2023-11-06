@@ -17,13 +17,14 @@ export const ContainerFooter = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 60.274px;
+        margin-bottom: -120px;
     }
 
     .conteudo{
         display: flex;
-        justify-content: space-around;
-        gap: 50px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 5rem;
         h1{
             margin: 0 0 10px 0;
             text-align: center;
@@ -36,8 +37,11 @@ export const ContainerFooter = styled.div`
             height: 25px;
             margin-bottom: 10px;
         }
-        li{
-            text-decoration: none;
+        a:link{
+                text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            justify-content: center;
         }
     }
 
@@ -122,10 +126,13 @@ export const ContainerFooter = styled.div`
         position: relative;
         padding: 2rem;
         align: right;
-        
+        svg{
+            margin-left: -60px;
+        }
     }
     .suporte > h1{
         position: relative;
+        margin-right: 120px;
         color: #FFF;
         font-size: 32px;
     }
@@ -158,17 +165,29 @@ export const ContainerFooter = styled.div`
     }
 
     .social{
-        float: right;
-        position: relative;
-        top: 60px;
-        color: white;
         display: flex;
         gap: 15px;
-        margin-right: 30px;
         svg{
             width: 30px;
             height: 30px;
+            color: white;
         }
     }
-    
+
+    .ultimos-elementos {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1.2rem;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+
 `;

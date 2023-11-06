@@ -82,8 +82,8 @@ const Footer = () => (
           alt="logo de 50 anos da fundarpe e do governo de pernambuco"
         />
         <div className="social">
-          <Twitter />
-          <Facebook />
+          <a href="https://twitter.com/culturape"> <Twitter/> </a>
+          <a href="https://www.facebook.com/culturape"> <Facebook/> </a>
           <Linkedin />
         </div>
       </section>
