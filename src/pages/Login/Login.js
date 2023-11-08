@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import LoginAdm from "./LoginAdm";
 import reCaptcha from "../../assets/Form/reCaptcha.png";
 import { Form } from "react-bootstrap";
+import Footer from "../../components/Footer";
 
 const Login = () => {
   const [form, setForm] = useState([]);
@@ -122,6 +123,7 @@ const Login = () => {
           <LoginAdm />
         )}
       </ContainerLogin>
+        <Footer />
     </>
   ):(
     <></>

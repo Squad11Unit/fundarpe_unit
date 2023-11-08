@@ -3,6 +3,7 @@ import ProfileHeaders from "../../components/Profiles/header";
 import avatarUser from "../../assets/Profile/avatar-user.jpg";
 import { NoticeSummary, Wrapper } from "./styled";
 import cardEdital from "../../assets/Profile/cardEdital.png";
+import Footer from "../../components/Footer";
 
 const Account = () => {
   return (
@@ -27,6 +28,7 @@ const Account = () => {
           <p>Colaborador acompanhe sua inscrição, desejamos-lhe boa sorte!</p>
         </div>
       </NoticeSummary>
+      <Footer />
     </Wrapper>
   );
 };

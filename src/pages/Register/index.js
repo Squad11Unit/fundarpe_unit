@@ -6,6 +6,7 @@ import { Acessos } from "../Login/styled";
 import { ContainerRegister } from "./styled";
 import { useNavigate } from "react-router-dom";
 import { cpfCnpjMask, validatePassword } from "../../Utils/validations";
+import Footer from "../../components/Footer";
 
 const Register = () => {
   const [agente, setAgente] = useState(true);
@@ -143,6 +144,7 @@ const Register = () => {
         <button type="submit" disabled={!InputValidator()}>Cadastre-se</button>
         <p>Já possui uma conta? <a href="/login">Inicie a sessão</a></p>
       </ContainerRegister>
+      <Footer />
     </div>
   );
 };
