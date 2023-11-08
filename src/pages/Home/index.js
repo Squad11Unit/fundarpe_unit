@@ -137,7 +137,7 @@ function Home() {
           />
         ))}
       </CardBox>
-      <Footer/>
+      <Footer />
     </ContainerHome>
   );
 }

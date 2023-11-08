@@ -17,7 +17,6 @@ export const ContainerFooter = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: -120px;
     }
 
     .conteudo{
@@ -25,6 +24,8 @@ export const ContainerFooter = styled.div`
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 0 5rem;
+        position: relative;
+        top: -30px;
         h1{
             margin: 0 0 10px 0;
             text-align: center;
