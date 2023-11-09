@@ -16,6 +16,7 @@ import { eventsCard } from "../../components/Card/eventsCard";
 import Banner1 from "../../assets/Principal/banner/Banner1.png";
 import Banner2 from "../../assets/Principal/banner/Banner2.png";
 import bridge from "../../assets/ponteMauricioDeNassau.png";
+import Footer from "../../components/Footer";
 
 function Home() {
   return (
@@ -49,7 +50,7 @@ function Home() {
         {editalCard.map((item) => (
           <CardHome
             key={item.id}
-            URL={item.URL}
+            URL={`/edital/${item.id}`}
             text={item.text}
             title={item.title}
             image={item.image}
@@ -136,6 +137,7 @@ function Home() {
           />
         ))}
       </CardBox>
+      <Footer />
     </ContainerHome>
   );
 }

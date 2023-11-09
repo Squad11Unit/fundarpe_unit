@@ -5,6 +5,7 @@ import { NoticeSummary, Wrapper, Legend } from "./styled";
 import cardEdital from "../../assets/Profile/cardEdital.png";
 import cardEdital2 from "../../assets/Profile/pareceristaCard.png";
 import { steps, stepsFinished } from "./constantsAccount";
+import Footer from "../../components/Footer";
 
 const Account = () => {
   return (
@@ -80,7 +81,7 @@ const Account = () => {
           </div>
         ))}
       </div>
-
+      <Footer />
     </Wrapper>
   );
 };
