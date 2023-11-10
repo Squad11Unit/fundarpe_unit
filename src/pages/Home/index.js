@@ -117,7 +117,7 @@ function Home() {
           ></iframe>
         </div>
         <div className={"color"}>
-          <h2>Seja parte dessa iniciativa!</h2>
+          <h2 className="whiteh2">Seja parte dessa iniciativa!</h2>
           <h4>conheça os nossos projetos, vem fortalecer nossa cultura</h4>
         </div>
       </div>

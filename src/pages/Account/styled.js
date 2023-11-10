@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  padding-bottom: 5rem;
   h2 {
     margin: 6rem 0 0 6rem;
     font-size: 2.25rem;
@@ -12,7 +11,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-item: flex-start;
     width: 90%;
-    margin: 4rem auto 0;
+    margin: 4rem auto ;
     .step {
       text-align: center;
       width: 20%;
