@@ -6,6 +6,13 @@ import {
   WrapCard,
   SelectGroup,
   WrapDoc,
+  Table,
+  ContainerTable,
+  ThOne,
+  ThTwo,
+  ThTree,
+  ThFour,
+  ThFive,
 } from "./styled";
 import { ButtonBox, CardBox } from "../Home/styled";
 import CardHome from "../../components/Card";
@@ -15,8 +22,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import ProfileHeaders from "../../components/Profiles/header";
-import avatar from "../../assets/Profile/avatar.jpg"
-
+import avatar from "../../assets/Profile/avatar.jpg";
 
 function AdminDetails() {
   const [inscricoes, setIncricoes] = useState(true);
@@ -36,19 +42,34 @@ function AdminDetails() {
     <div>
       <Header userName="Roberto Silva" />
       <ProfileHeaders
-       photo={avatar}
-       name="Roberto Silva"
+        photo={avatar}
+        name="Roberto Silva"
         occupation="MÚSICO PERNAMBUCANO"
-        th1="E-mail"
-        click1={mostrarCard}
-        whether1={inscricoes}
-        th2="Inscrições"
-        th3="Notificações"
-        th4="Pareceristas"
-        click5={mostrarDoc}
-        whether5={documentacoes}
-        th5="Documentações"
       />
+      <ContainerTable>
+        <Table>
+          <thead>
+            <tr>
+              <ThOne>E-mail</ThOne>
+              <ThTwo
+                onClick={mostrarCard}
+                style={{ backgroundColor: inscricoes ? "#f8e6d1" : "white" }}
+              >
+                Inscrições
+              </ThTwo>
+              <ThTree>Notificações</ThTree>
+              <ThFour>Pareceristas</ThFour>
+              <ThFive
+                onClick={mostrarDoc}
+                style={{ backgroundColor: documentacoes ? "#f8e6d1" : "white" }}
+              >
+                Documentações
+              </ThFive>
+            </tr>
+          </thead>
+        </Table>
+      </ContainerTable>
+
       {inscricoes && (
         <WrapInscription>
           <h1>Inscrição</h1>

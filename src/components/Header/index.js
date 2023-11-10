@@ -17,7 +17,7 @@ function Header({
   return localStorage.getItem("User") ||
     localStorage.getItem("Administrador") ? (
     <HeaderContainer>
-      <img src={logoheader} alt="Logo do Funcultura" />
+      <img src={logoheader} alt="Logo do Funcultura" onClick={() => navigate("/")} />
       <InitialOptions>
         <a href="https://www.cultura.pe.gov.br/fundarpe/">{institutions}</a>
         <a href="/perfil">{userName}</a>

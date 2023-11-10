@@ -30,7 +30,7 @@ export const ContainerHome = styled.body`
     border-radius: 0 0 5px 5px;
     height: 170px;
   }
-  h2 {
+  h2.whiteh2 {
     color: #ffff;
     padding: 30px 30px 0;
   }
