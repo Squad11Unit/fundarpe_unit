@@ -1,4 +1,4 @@
-export const checkboxFormGeral = [
+export const checkboxFormM = [
     {
         id: 1,
         title: "Ações de criação"

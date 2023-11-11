@@ -18,9 +18,11 @@ import {
 } from "react-bootstrap-icons";
 import { Button } from "react-bootstrap";
 import { editalCard } from "../Card/editalCard";
+import { useNavigate } from "react-router";
 
 const PublicNotice = () => {
   const id = window.location.pathname.split("/").pop();
+  const navigate = useNavigate();
 
   return (
     <Container>
@@ -116,7 +118,20 @@ const PublicNotice = () => {
             <Download />
             Baixar o regulamento
           </button>
-          <button className="button2">Inscreva-se</button>
+          {editalCard.map((item) => {
+            if (id.includes(item.id)) {
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => navigate(`/form/${item.id}`)}
+                  className="button2"
+                >
+                  Inscreva-se
+                </button>
+              );
+            }
+            return null;
+          })}
         </div>
       </SectionFour>
     </Container>

@@ -1,68 +1,71 @@
 import styled from "styled-components";
 
 export const ContainerFormPage = styled.div`
-
-.flex_body{
+  .flex_body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 1rem;
-    margin: 5rem 6rem 5rem 6rem ;
-}
+    padding: 3rem 8rem;
+  }
 
-h1{
-    margin: 0rem 9rem 0 9rem ;
-    border-radius: 0.800rem ;
-    background-color:#FFAA00;
+  h1 {
+    margin: 0rem 9rem 0 9rem;
+    border-radius: 0.8rem;
+    background-color: #ffaa00;
     padding: 1rem;
     font-size: 0.993rem;
     color: #ffff;
-}
+  }
 
-.form_public{
-    margin: 0.800rem 9rem 0 9rem;
+  .form_public {
+    margin: 0.8rem 9rem 0 9rem;
     justify-content: center;
     align-items: center;
-    border-radius: 0.800rem;
+    border-radius: 0.8rem;
     padding: 1rem;
     border: 1px solid black;
-}
+  }
 
-.threeForm{
+  .threeForm {
+    margin: 0.8rem 9rem 0 9rem;
     display: flex;
-    border-radius: 0.800rem;
-    margin: 0.800rem 9rem 0 9rem;
+    justify-content: space-between;
+    border-radius: 0.8rem;
     padding: 1rem;
     border: 1px solid black;
-}
-.iconD{
+  }
+  .iconD {
     margin: 0.5rem 1rem 0.1rem 1rem;
-}
-.load{
-    margin: 3rem -5rem 0rem 2rem;
-    background-color: #D9D9D9;
+  }
+  .attchIcon{
+    display: flex;
+  }
+  .load {
+    background-color: #d9d9d9;
     display: flex;
     padding: 3rem;
-    border-radius: 0.800rem;
+    border-radius: 0.8rem;
     flex-direction: column;
+  }
+  .buttonbox {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+    .bfinish {
+      padding: 15px 20px;
+      border: 1px solid #eee;
+    }
+  }
 
-}
-.bfinish{
-    align: center;
-    padding: 15px 20px;
-    border: 1px solid #eee;
-}
-
-.text2{
+  .text2 {
     margin: 1rem;
     border: 1px solid black;
-    border-radius: 0.800rem;
+    border-radius: 0.8rem;
     padding: 0.5rem;
-}
+  }
 
-.text1{
+  .text1 {
     padding: 1rem;
-
-}
+  }
 `;
-
