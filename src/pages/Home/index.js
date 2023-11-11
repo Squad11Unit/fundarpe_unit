@@ -10,6 +10,7 @@ import { eventsCard } from "../../components/Card/eventsCard";
 import Banner1 from "../../assets/Principal/banner/Banner1.png";
 import Banner2 from "../../assets/Principal/banner/Banner2.png";
 import bridge from "../../assets/ponteMauricioDeNassau.png";
+import Footer from "../../components/Footer";
 
 function Home() {
   return (
@@ -110,7 +111,7 @@ function Home() {
           ></iframe>
         </div>
         <div className={"color"}>
-          <h2>Seja parte dessa iniciativa!</h2>
+          <h2 className="whiteh2">Seja parte dessa iniciativa!</h2>
           <h4>conheça os nossos projetos, vem fortalecer nossa cultura</h4>
         </div>
       </div>
@@ -130,6 +131,7 @@ function Home() {
           />
         ))}
       </CardBox>
+      <Footer />
     </ContainerHome>
   );
 }
