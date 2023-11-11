@@ -11,6 +11,7 @@ export const editalCard = [
       day: 15,
       month: "JUN",
       URL: "",
+      category: "parecerista",
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ export const editalCard = [
       day: 15,
       month: "MAI",
       URL: "",
+      category: "geral",
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ export const editalCard = [
       day: 30,
       month: "ABR",
       URL: "",
+      category: "audiovisual",
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ export const editalCard = [
       day: 10,
       month: "MAI",
       URL: "",
+      category: "musica",
     },
     {
       id: 5,
@@ -47,6 +51,7 @@ export const editalCard = [
       day: 24,
       month: "ABR",
       URL: "",
+      category: "microprojeto",
     },
     {
       id: 6,
@@ -56,6 +61,7 @@ export const editalCard = [
       day: 30,
       month: "ABR",
       URL: "",
+      category: "audiovisual",
     },
 
 ];
