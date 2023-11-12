@@ -23,6 +23,8 @@ import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import ProfileHeaders from "../../components/Profiles/header";
 import avatar from "../../assets/Profile/avatar.jpg";
+import Footer from "../../components/Footer";
+
 
 function AdminDetails() {
   const [inscricoes, setIncricoes] = useState(true);
@@ -158,6 +160,8 @@ function AdminDetails() {
           </Documentations>
         </WrapDoc>
       )}
+      <Footer />
+
     </div>
   );
 }
