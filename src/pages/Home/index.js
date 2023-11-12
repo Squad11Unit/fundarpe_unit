@@ -1,13 +1,7 @@
 import CardHome from "../../components/Card";
 import CarouselHome from "../../components/Carousel";
 import Header from "../../components/Header";
-import {
-  SelectGroup,
-  CardBox,
-  ContainerHome,
-  AboutBox,
-  ButtonBox,
-} from "./styled";
+import { SelectGroup, CardBox, ContainerHome, AboutBox, ButtonBox } from "./styled";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
@@ -117,7 +111,7 @@ function Home() {
           ></iframe>
         </div>
         <div className={"color"}>
-          <h2>Seja parte dessa iniciativa!</h2>
+          <h2 className="whiteh2">Seja parte dessa iniciativa!</h2>
           <h4>conheça os nossos projetos, vem fortalecer nossa cultura</h4>
         </div>
       </div>

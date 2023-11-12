@@ -63,27 +63,6 @@ const ProfileHeaders = ({
           <p>Editar</p>
         </div>
       </Description>
-      <ContainerTable>
-        <Table>
-          <tr>
-            <ThOne>{th1}</ThOne>
-            <ThTwo
-              onClick={click1}
-              style={{ backgroundColor: `${whether1} ? "#f8e6d1" : "white"` }}
-            >
-              {th2}
-            </ThTwo>
-            <ThTree>{th3}</ThTree>
-            <ThFour>{th4}</ThFour>
-            <ThFive
-              onClick={click5}
-              style={{ backgroundColor: `${whether5} ? "#f8e6d1" : "white"` }}
-            >
-              {th5}
-            </ThFive>
-          </tr>
-        </Table>
-      </ContainerTable>
     </>
   );
 };

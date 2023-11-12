@@ -5,6 +5,7 @@ export const ContainerFooter = styled.div`
     justify-content: center;
     font-family: 'Open Sans';
     padding-bottom: 10px;
+    clear: both;
     
     .fundo{
         display: flex;
