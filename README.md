@@ -1,12 +1,11 @@
-# Título e Imagem de capa
 <h1 align="center"> Plataforma Web - Editais Fundarpe </h1>
-![Logo da Fundarpe](https://github.com/Squad11Unit/fundarpe_unit/assets/89558668/c0d15229-9988-4638-a0eb-89ffd24c587b)
+
+![Logo](https://github.com/Squad11Unit/fundarpe_unit/assets/89558668/d3690b15-ce9c-49f0-916f-8f5ac5e20617)
 
 # Badges
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento]()
 
 # Índice
-* [Título e Imagem de capa](#Título-e-Imagem-de-capa)
 * [Badges](#badges)
 * [Índice](#índice)
 * [Descrição do Projeto](#descrição-do-projeto)
