@@ -29,7 +29,7 @@
 </ul>
 
 # :hammer: Funcionalidades e Demonstração da Aplicação
-- `Tela Principal`: representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais. 
+`Tela Principal`: representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais. 
 
 <p> 
 A tela home é composta por 3 arquivos js: index, styled e constants. 
@@ -83,7 +83,7 @@ O constants.js representa os filtros de mês e categoria da seção de editais d
 
 
 
-- `Tela de Login`: representa a tela de acesso do usuário à plataforma através das suas credenciais de autenticação seja ele um agente ou administrador.
+`Tela de Login`: representa a tela de acesso do usuário à plataforma através das suas credenciais de autenticação seja ele um agente ou administrador.
 
 <p>
 A tela de login é composta por 3 arquivos js: Login, Login.Adm e styled.
