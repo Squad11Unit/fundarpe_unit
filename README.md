@@ -42,37 +42,37 @@ O constants.js representa os filtros de mês e categoria da seção de editais d
 
 </p>
 
-<h4>Da pasta Components foram importados os seguintes componentes:</h4>
+<h3>Da pasta Components foram importados os seguintes componentes:</h3>
 <ul><li>CardHome</li>
 <li>CarouselHome</li>
 <li>Header</li>
 <li>Footer</li></ul>
 
-<h4>Dentro da pasta Card foram importados os seguintes componentes:</h4>
+<h3>Dentro da pasta Card foram importados os seguintes componentes:</h3>
 <ul><li>editalCard</li>
 <li>eventsCard</li></ul>
 
-<h4>Do react-bootstrap foram importados os seguintes componentes:</h4>
+<h3>Do react-bootstrap foram importados os seguintes componentes:</h3>
 <ul><li>Dropdown</li>
 <li>DropdownButton</li></ul>
 
-<h4>Do arquivo styled.js foram importados os seguintes elementos:</h4>
+<h3>Do arquivo styled.js foram importados os seguintes elementos:</h3>
 <ul><li>SelectGroup</li>
 <li>CardBox</li>
 <li>ContainerHome</li>
 <li>AboutBox</li>
 <li>ButtonBox</li></ul>
 
-<h4>Do arquivo constant.js foram importados os seguintes elementos:</h4>
+<h3>Do arquivo constant.js foram importados os seguintes elementos:</h3>
 <ul><li>meses</li>
 <li>categorias</li></ul>
 
-<h4>Da pasta assets foram importadas as seguintes imagens:</h4>
+<h3>Da pasta assets foram importadas as seguintes imagens:</h3>
 <ul><li>Banner1</li>
 <li>Banner2</li>
 <li>bridge</li></ul>
 
-<h4>Dentro do ContainerHome teremos os seguintes componentes (alguns já importados acima):</h4>
+<h3>Dentro do ContainerHome teremos os seguintes componentes (alguns já importados acima):</h3>
 <ul><li>Header: Contém informações do cabeçalho, como o nome de usuário, links para seções específicas (como institucionais), botões para registrar e sair, e uma opção para iniciar a sessão. </li>
 <li>CarouselHome: Exibe informações de forma dinâmica e atrativa em um carrossel. Contém título, detalhe adicional e uma descrição mais aprofundada sobre a iniciativa do Governo de Pernambuco relacionada à cultura. </li>
 <li>SelectGroup, CardBox e ButtonBox: Permite filtrar os editais por mês e categoria, exibindo uma lista de editais em cartões (CardHome). Além disso, inclui um botão para possibilitar a visualização de mais detalhes sobre os editais. </li>
@@ -80,6 +80,8 @@ O constants.js representa os filtros de mês e categoria da seção de editais d
 <li>Div flex_container, flex_section e flex_imag: Seção visualmente rica, contendo imagens, vídeos e texto. Ela utiliza a flexibilidade do layout para organizar elementos visualmente de maneira atrativa e dinâmica.
 <li>CardBox: Seção de eventos, onde cada evento é exibido por meio do componente CardHome. Os eventos são mapeados a partir do array eventsCard e apresentados em cartões. Cada cartão inclui informações relacionadas ao evento (título, imagem, data e descrição). </li>
 <li>Footer: Representa o rodapé que contém informações institucionais, linguagens, suporte, logos e links para redes sociais. </li></ul>
+
+
 
 - `Tela de Login`: representa a tela de acesso do usuário à plataforma através das suas credenciais de autenticação seja ele um agente ou administrador.
 
@@ -93,35 +95,35 @@ O LoginAdm.js representa a tela de login do Administrador, indivíduo que realiz
 O styled.js representa os elementos de estilo utilizados na tela de login.
 </p>
 
-<h4>Da pasta Components foram importados os seguintes componentes:</h4>
+<h3>Da pasta Components foram importados os seguintes componentes:</h3>
 <ul><li>Header</li>
 <li>Footer</li></ul>
 
-<h4>Do react foi importado o seguinte componente:</h4>
-<ul><li>React, useState</li>
+<h3>Do react foi importado o seguinte componente:</h3>
+<><li>React, useState</li>
 
-<h4>Do arquivo validations.js da pasta Utils foram importados os seguintes componentes:</h4>
-<ul><li>cpfCnpjMask</li>
-<li>validatePassword</li></ul>
+<h3>Do arquivo validations.js da pasta Utils foram importados os seguintes componentes:</h3>
+<li>cpfCnpjMask</li>
+<li>validatePassword</li>
 
-<h4>Do react-router-dom foi importado o seguinte componente:</h4>
-<ul><li>useNavigate</li></ul>
+<h3>Do react-router-dom foi importado o seguinte componente:</h3>
+<li>useNavigate</li>
 
-<h4>Do styled.js foram importados os seguintes componentes:</h4>
-<ul><li>ContainerLogin</li>
+<h3>Do styled.js foram importados os seguintes componentes:</h3>
+<li>ContainerLogin</li>
 <li>ReCaptcha</li>
-<li>Acessos</li></ul>
+<li>Acessos</li>
 
-<h4>Do LoginAdm.js foi importado o seguinte componente:</h4>
-<ul><li>LoginAdm</li></ul>
+<h3>Do LoginAdm.js foi importado o seguinte componente:</h3>
+<li>LoginAdm</li>
 
-<h4>Da pasta Form (dentro da pasta assets) foi importado o seguinte componente:</h4>
-<ul><li>reCaptcha</li></ul>
+<h3>Da pasta Form (dentro da pasta assets) foi importado o seguinte componente:</h3>
+<li>reCaptcha</li>
 
-<h4>Do react-bootstrap foi importado o seguinte componente:</h4>
-<ul><li>Form</li></ul>
+<h3>Do react-bootstrap foi importado o seguinte componente:</h3>
+<li>Form</li>
 
-<h4>Antes da estrutura da página, foram utilizados os seguintes componentes funcionais de React:</h4>
+<h3>Antes da estrutura da página, foram utilizados os seguintes componentes funcionais de React:</h3>
 <li>useState: Utiliza o Hook useState para gerenciar estados locais, incluindo form (para os dados do formulário), loading (para indicar se o processo de login está em andamento), cpfCnpj (para armazenar CPF ou CNPJ), e agente (para controlar se a tela exibe o formulário de agente ou administrador).</li>
 <li>useNavigate: Utiliza o hook useNavigate para obter a função de navegação. A função navigate será usada para redirecionar o usuário após o login bem-sucedido.</li>
 <li>showAgenteLogin/showAdminLogin: São funções que alteram o estado agente (setAgente), determinando qual formulário de login deve ser exibido. </li>
@@ -130,12 +132,13 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 <li>InputValidator: Verifica se a senha é válida (usando validatePassword) e se o comprimento do CPF/CNPJ é maior que 10.</li>
 <li>isUserLoggedIn: Verifica se um usuário já está autenticado (tem uma sessão ativa) usando o localStorage. Se sim, redireciona imediatamente para a página inicial. A renderização do componente é condicional, se não houver usuário autenticado, o restante do componente é renderizado.</li>
 
-<h4>A página de login é composta pelos seguintes componentes (alguns já importados e citados acima):</h4>
+<h3>A página de login é composta pelos seguintes componentes (alguns já importados e citados acima):</h3>
 <li>Header: Representa as informações do cabeçalho, como a logo do funcultura por exemplo.</li>
 <li>Acessos: Responsável por exibir dois botões que permitem alternar entre os modos de "Acesso Agente" e "Acesso Administrador". A mudança de estilo destaca visualmente o tipo de acesso selecionado. As funções showAgenteLogin e showAdminLogin alteram o estado do componente para refletir a escolha do usuário.</li>
 <li>form: A renderização do código está condicionada ao valor da variável de estado agente. Se agente for verdadeiro renderiza um formulário de login para agentes, com campos para CPF/CNPJ, senha, opção de redefinição de senha, e um botão de entrada. O formulário inclui um ReCaptcha para melhorar a segurança durante o processo de login.</li>
 <li>LoginAdm: Caso agente não seja verdadeiro, renderiza um formulário de login para administradores contendo campos para matrícula, senha, opção de redefinição de senha, um botão de entrada e ReCaptcha.</li>
 <li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais. </li>
+
 
 
 - `Tela de Cadastro`: descrição da tela
