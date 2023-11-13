@@ -29,7 +29,7 @@
 </ul>
 
 # :hammer: Funcionalidades e Demonstração da Aplicação
-- `Tela Principal`: representa a tela principal da plataforma dedicado à promoção cultural e divulgação de eventos e editais. 
+- `Tela Principal`: representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais. 
 
 <p> 
 A tela home é composta por 3 arquivos js: index, styled e constants. 
@@ -37,43 +37,44 @@ A tela home é composta por 3 arquivos js: index, styled e constants.
 O Index.js representa a Tela Principal e está dividido em várias seções, cada uma representando um bloco ou uma parte específica da página. Todas as seções da página se encontram dentro do ContainerHome.
 </p>
 
-<ul> Da pasta Components foram importados os seguintes componentes: 
-  <li>CardHome</li>
-  <li>CarouselHome</li>
-  <li>Header</li>
-  <li>Footer</li>
-</ul>
+<h4>Da pasta Components foram importados os seguintes componentes:</h4>
+<ul><li>CardHome</li>
+<li>CarouselHome</li>
+<li>Header</li>
+<li>Footer</li></ul>
 
-<ul> Dentro da pasta Card foram importados os seguintes componentes: 
-  <li>editalCard</li>
-  <li>eventsCard</li>
-</ul>
+<h4>Dentro da pasta Card foram importados os seguintes componentes:</h4>
+<ul><li>editalCard</li>
+<li>eventsCard</li></ul>
 
-<ul> Do react-bootstrap foram importados os seguintes componentes:
-<li>Dropdown</li>
-<li>DropdownButton</li>
-</ul>
+<h4>Do react-bootstrap foram importados os seguintes componentes:</h4>
+<ul><li>Dropdown</li>
+<li>DropdownButton</li></ul>
 
-<ul> Do arquivo styled.js foram importados os seguintes elementos:
-<li>SelectGroup, CardBox, ContainerHome, AboutBox, ButtonBox</li>
-</ul>
+<h4>Do arquivo styled.js foram importados os seguintes elementos:</h4>
+<ul><li>SelectGroup</li>
+<li>CardBox</li>
+<li>ContainerHome</li>
+<li>AboutBox</li>
+<li>ButtonBox</li></ul>
 
-<ul> Do arquivo constant.js foram importados os seguintes elementos:
-<li>meses, categorias</li>
-</ul>
+<h4>Do arquivo constant.js foram importados os seguintes elementos:</h4>
+<ul><li>meses</li>
+<li>categorias</li></ul>
 
-<ul> Da pasta assets foram importadas as seguintes imagens: 
-<li>Banner1, Banner2, bridge</li>
-</ul>
+<h4>Da pasta assets foram importadas as seguintes imagens:</h4>
+<ul><li>Banner1</li>
+<li>Banner2</li>
+<li>bridge</li></ul>
 
-<ul> Dentro do ContainerHome teremos os seguintes componentes já importados acima:
-<li>Header: Contém informações do cabeçalho, como o nome de usuário, links para seções específicas (como institucionais), botões para registrar e sair, e uma opção para iniciar a sessão. </li>
+<h4>Dentro do ContainerHome teremos os seguintes componentes já importados acima:</h4>
+<ul><li>Header: Contém informações do cabeçalho, como o nome de usuário, links para seções específicas (como institucionais), botões para registrar e sair, e uma opção para iniciar a sessão. </li>
 <li>CarouselHome: Exibe informações de forma dinâmica e atrativa em um carrossel. Contém título, detalhe adicional e uma descrição mais aprofundada sobre a iniciativa do Governo de Pernambuco relacionada à cultura. </li>
 <li>SelectGroup, CardBox e ButtonBox: Permite filtrar os editais por mês e categoria, exibindo uma lista de editais em cartões (CardHome). Além disso, inclui um botão para possibilitar a visualização de mais detalhes sobre os editais. </li>
-<li>AboutBox: Seção informativa sobre o Funcultura PE, contendo um link para obter mais informações, uma imagem relacionada e um parágrafo detalhado explicando a origem, funcionamento e impacto do Funcultura. <li>
+<li>AboutBox: Seção informativa sobre o Funcultura PE, contendo um link para obter mais informações, uma imagem relacionada e um parágrafo detalhado explicando a origem, funcionamento e impacto do Funcultura.
 <li>Div flex_container, flex_section e flex_imag: Seção visualmente rica, contendo imagens, vídeos e texto. Ela utiliza a flexibilidade do layout para organizar elementos visualmente de maneira atrativa e dinâmica.
 <li>CardBox: Seção de eventos, onde cada evento é exibido por meio do componente CardHome. Os eventos são mapeados a partir do array eventsCard e apresentados em cartões. Cada cartão inclui informações relacionadas ao evento (título, imagem, data e descrição). </li>
-<li>Footer: Representa o rodapé que contém informações institucionais, linguagens, suporte, logos e links para redes sociais. </li>
+<li>Footer: Representa o rodapé que contém informações institucionais, linguagens, suporte, logos e links para redes sociais. </li></ul>
 
 - `Tela de Login`: descrição da tela
 
