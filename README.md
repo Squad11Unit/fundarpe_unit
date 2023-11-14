@@ -139,11 +139,76 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 <li>LoginAdm: Caso agente não seja verdadeiro, renderiza um formulário de login para administradores contendo campos para matrícula, senha, opção de redefinição de senha, um botão de entrada e ReCaptcha.</li>
 <li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais. </li>
 
-
+<br />
 
 - `Tela de Cadastro`: descrição da tela
 
-- `Tela de Detalhes do Edital`: descrição da tela
+<br />
+
+`Tela de Detalhes do Edital`: <p>Cada edital possui sua particularidade, eles se dividem em Audiovisual, Geral, Microprojeto Cultural, Música e Parecerista. </p>
+
+<p> Para a composição da tela de detalhes do edital temos 3 arquivos js:
+
+🛠️ Um index.js está alocado dentro de uma pasta específica para a construção estrutural de detalhes de edital, nomeada como PublicNotice.  
+
+🛠️ Um segundo index.js está dentro da pasta pages que são as telas de retorno para os usuários. 
+
+⭐ O styled.js foi onde trabalhamos a apresentação visual dos elementos.
+</p>
+
+<h3>Na pasta Componentes do PublicNotice importamos bibliotecas, elementos e caminhos de outros componentes</h3>
+
+
+<h3>Biblioteca React Bootstrap</h3>
+<ul>
+<li>React Bootstrap Icons</li>
+<li>React Bootstrap (botão)</li>
+</ul>
+
+<h3>Do react-router-dom foi importado o seguinte componente:</h3>
+<li>useNavigate (react-router)</li>
+
+<h3>Componentes</h3>
+<li>editalCard</li>
+
+<h3>Elementos de estilo</h3>
+<ul>
+<li>Container</li>
+<li>SectionOne</li>
+<li>SectionTwo</li>
+<li>SectionThree</li>
+<li>SectionFour</li>
+<li>Title</li>
+<li>Image</li>
+<li>FileIcon</li>
+<li>LampIcon</li>
+</ul>
+
+<h3>Antes da estrutura da página, foram utilizados os seguintes componentes funcionais de React:</h3>
+
+Uma const id, uma função JavaScript que permite nossa navegação entre (item.id), quando definida o que auxilia a otimizar o código, quando atribuirmos condições e determinamos como a aplicação deve se comportar na estruturação dos possíveis cenários e rotas para assim retornar ao usuário.  
+
+Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na construção da aplicação web e importes de outros componentes como os de edital que foi criado na tela de Home, de acordo com os requisitos funcionais da nossa aplicação estipulados pelo cliente.
+
+<h3>A página de detalhes de edital é composta pelos seguintes componentes (alguns já importados e citados acima):</h3>
+
+<li>Header: Representa as informações do cabeçalho, como a logo do funcultura por exemplo.</li>
+
+<li>PublicNotice: Que carrega todos os importes estruturais e se divide em 1 container que abraça todo o corpo do nosso código, 4 sessões estruturais que delimitam as caixas de construção do conteúdo. 
+
+<br /> **Container:** utilizamos uma função map do JavaScript que funcionará em conjunto com a const id na navegação (useNavigate) entre os editais.
+
+**SectionOne:** utilizamos uma 🔑 para poder habilitar essa navegação e trazer retornos distintos dependendo do edital que o usuário selecionar na aplicação.
+
+**SectionTwo:** trouxemos a logo da secretaria da cultura que é a responsável pelos editais do Funcultura, trouxemos um link direcionável para que o usuário possa explorar o Mapa Cultural de Pernambuco. 
+
+**SectionTree:** são informações complementares do edital e de suporte ao usuário.
+
+**SectionFour:** é composta pela estruturação de direcionamento do usuário para mais informações para sua inscrição e o botão de inscrição de fato onde usamos a mesma ideia do __(map)__ que foi utilizada na SectionTwo, para direcionar o usuário para a inscrição do edital específico selecionado. 
+
+<li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais. </li>
+
+<br />
 
 - `Tela de Inscrição do Edital`: descrição da tela
 
