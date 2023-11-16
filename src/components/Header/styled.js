@@ -10,10 +10,24 @@ export const HeaderContainer = styled.div`
   padding: 3.5rem 115px;
   align-items: center;
   img {
-    cursor:pointer;
+    cursor: pointer;
     height: 100px;
   }
+  @media only screen and (max-device-width: 425px) {
+    a {
+      font-size: 1rem;
+    }
+    img {
+      height: 40px;
+    }
+    button {
+      font-size: 0.8rem;
+    }
+    padding: 1rem 0;
+    gap: 0.3rem;
+  }
 `;
+
 export const InitialOptions = styled.div`
   display: flex;
   gap: 30px;
