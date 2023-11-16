@@ -100,7 +100,7 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 <li>Footer</li></ul>
 
 <h3>Do react foi importado o seguinte componente:</h3>
-<><li>React, useState</li>
+<p><li>React, useState</li>
 
 <h3>Do arquivo validations.js da pasta Utils foram importados os seguintes componentes:</h3>
 <li>cpfCnpjMask</li>
@@ -141,8 +141,63 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 
 <br />
 
-- `Tela de Cadastro`: descrição da tela
+`Tela de Cadastro`: <p>A tela de cadastro foi idealizada para ser intuitiva e receptiva para o usuário, ela foi construída com uma interface familiar o que torna o processo de cadastramento confortável.</p>
 
+<p>Para a construção da tela foi utilizado 2 arquivos js:</p>
+
+🛠️  index.js está dentro da pasta **pages** que são as telas de retorno para os usuários.
+
+⭐ O styled.js foi onde trabalhamos a apresentação visual dos elementos.
+
+⭐ Também importamos um arquivo styled.js do **Login**  que foi onde trabalhamos a apresentação visual dos elementos compartilhados.
+
+<h2>Na construção utilizamos alguns componentes importados</h2>
+
+<h3>Biblioteca React Bootstrap</h3>
+<ul>
+<li>React Bootstrap Form</li>
+</ul>
+
+<h3>Do react-router-dom foi importado o seguinte componente:</h3>
+<ul><li>useNavigate (react-router)</li></ul>
+
+<h3>Do react foi importado o seguinte componente:</h3>
+<ul><li>useState (react)</li></ul>
+
+<h3>Validações importadas para construção da tela</h3>
+<ul><li>cpfCnpjMask</li>
+<li>validatePassword</li>
+</ul>
+
+<h3>Componentes</h3>
+<ul>
+<li>Header</li>
+<li>LoginHeader</li>
+<li>Footer</li>
+</ul>
+
+<h3>Elementos de estilo</h3>
+<ul>
+<li>Acessos</li>
+<li>ContainerRegister</li>
+</ul>
+
+<h3>Antes da estrutura da página, foram utilizados os seguintes componentes funcionais de React:</h3>
+
+Uma const Register, uma função JavaScript que permite a identificação do tipo de perfil que será cadastrado, foi definido também uma const navigate, que é caracterizada pelo uso da função **useNavigate( )**. Também implementamos no código condições para validar se o usuário é um agente ou um administrador, funções como validação de senha e CPF.
+
+Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na construção da aplicação web e importes de outros componentes.
+
+<h3>A página de Cadastro é composta pelos seguintes componentes (alguns já importados e citados acima):</h3>
+
+<li>Header: Representa as informações do cabeçalho, como a logo do funcultura por exemplo.</li>
+
+<li>LoginHeader: Incluímos o caminho para o usuário que busca cadastrar-se e criamos o formulário com os dados que eram necessários para o processo de cadastramento na plataforma.</li>
+
+<li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais. </li>
+
+
+<br />
 <br />
 
 `Tela de Detalhes do Edital`: <p>Cada edital possui sua particularidade, eles se dividem em Audiovisual, Geral, Microprojeto Cultural, Música e Parecerista. </p>
@@ -151,12 +206,13 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 
 🛠️ Um index.js está alocado dentro de uma pasta específica para a construção estrutural de detalhes de edital, nomeada como PublicNotice.  
 
-🛠️ Um segundo index.js está dentro da pasta pages que são as telas de retorno para os usuários. 
+🛠️ Um segundo index.js está dentro da pasta **pages** que são as telas de retorno para os usuários. 
 
 ⭐ O styled.js foi onde trabalhamos a apresentação visual dos elementos.
 </p>
 
-<h3>Na pasta Componentes do PublicNotice importamos bibliotecas, elementos e caminhos de outros componentes</h3>
+<h2>Na pasta Componentes do PublicNotice importamos bibliotecas, elementos e caminhos de outros componentes</h2>
+
 
 
 <h3>Biblioteca React Bootstrap</h3>
@@ -166,10 +222,10 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 </ul>
 
 <h3>Do react-router-dom foi importado o seguinte componente:</h3>
-<li>useNavigate (react-router)</li>
+<ul><li>useNavigate (react-router)</li></ul>
 
 <h3>Componentes</h3>
-<li>editalCard</li>
+<ul><li>editalCard</li></ul>
 
 <h3>Elementos de estilo</h3>
 <ul>
