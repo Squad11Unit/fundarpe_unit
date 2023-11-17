@@ -391,8 +391,74 @@ O arquivo constantAccount.js representa a lista de etapas (steps) e etapas concl
 </br>
 </br>
 
-`Tela de Perfil (Administrador)`: descrição da tela
+`Tela de Perfil (Administrador)`: representa a tela onde o administrador visualiza suas informações pessoais além de suas inscrições, notificações, pareceristas e documentações para análise.
 
+<p>
+A tela de perfil do administrador é formada por 2 arquivos js: index e styled.
+
+O arquivo index.js representa a tela de perfil do administrador.
+
+O arquivo styled.js representa os elementos de estilo utilizados na tela de perfil.
+</p>
+
+<h3>Da pasta components foram importados os seguintes componentes:</h3>
+<ul><li>Header</li>
+<li>Footer</li></ul>
+
+<h3>Da pasta Profiles (dentro da pasta components) foi importado o seguinte componente:</h3>
+<ul><li>ProfileHeaders</li></ul>
+
+<h3>Da pasta Profile (dentro da pasta assets) foram importados os seguintes componentes:</h3>
+<ul><li>avatar</li></ul>
+
+<h3>Do arquivo styled.js foram importados os seguintes componentes:</h3>
+<ul><li>Documentations</li>
+<li>WrapInscription</li>
+<li>WrapCard</li>
+<li>SelectGroup</li>
+<li>WrapDoc</li>
+<li>ContainerTable</li>
+<li>Table</li>
+<li>ThOne</li>
+<li>ThTwo</li>
+<li>ThTree</li>
+<li>ThFour</li>
+<li>ThFive</li></ul>
+
+<h3>Do arquivo styled.js da pasta Home foram importados os seguintes componentes:</h3>
+<ul><li>ButtonBox</li>
+<li>CardBox</li></ul>
+
+<h3>Da pasta Card (dentro da pasta components) foram importados os seguintes componentes:</h3>
+<ul><li>CardHome</li>
+<li>editalCard</li></ul>
+
+<h3>Do arquivo constants.js (dentro da pasta Home) foram importados os seguintes componentes:</h3>
+<ul><li>categorias</li>
+<li>meses</li></ul>
+
+<h3>Do react-bootstrap foram importados os seguintes componentes:</h3>
+<ul><li>DropdownButton</li>
+<li>Dropdown</li>
+<li>Form</li></ul>
+
+<h3>Do react foi importado o seguinte componente:</h3>
+<ul><li>useState</li></ul>
+
+<h3>A página de perfil do administrador é composta pelos seguintes componentes (alguns já importados e citados acima):</h3>
+<li>AdminDetails: Inicializa dois estados de componente, inscricoes e documentacoes, utilizando o hook useState. Esses estados podem ser utilizados para controlar o comportamento e a renderização condicional dentro do componente AdminDetails com base nesses valores de estado.</li>
+<li>mostrarCard: Atualiza os estados do componente AdminDetails, configurando inscricoes como true e documentacoes como false indicando que a seção de inscrições deve ser exibida.</li>
+<li>mostrarDoc: Define inscricoes como false e documentacoes como true, indicando que a seção de documentações deve ser exibida.</li>
+
+<h4>Dentro de uma div, teremos os seguintes componentes:</h4>
+<li>Header: Renderiza um componente de cabeçalho com o nome de usuário.</li>
+<li>ProfileHeaders: Renderiza um componente de perfil que inclui uma foto (photo), nome (name), e ocupação (occupation).</li>
+<li>ContainerTable: Cria uma tabela com um cabeçalho interativo, onde as colunas "Inscrições" e "Documentações" têm estilos condicionais e estão associadas a funções (mostrarCard e mostrarDoc, respectivamente) que provavelmente controlam o conteúdo exibido no restante do componente com base nessas interações.</li>
+<li>inscricoes: Renderiza uma seção específica do conteúdo quando a variável inscricoes é verdadeira, incluindo um título, seletores, cartões e um botão "Ver mais".</li>
+<li>documentacoes: Renderiza uma seção específica do conteúdo quando a variável documentacoes é verdadeira, incluindo um título, um seletor de formulário, e uma tabela com informações detalhadas sobre usuários. </li>
+
+<br/>
+<br/>
 
 # Pessoas Desenvolvedoras do Projeto
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/89558668?v=4" width=115><br><sub>Ana Beatriz Lira</sub>](https://github.com/anabsl) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/146121865?v=4" width=115><br><sub>Anderson Fernandes</sub>](https://github.com/AndersonFernandes-dev) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/146091291?v=4" width=115><br><sub>Artur Ramos</sub>](https://github.com/Arturdev05) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/124224859?v=4" width=115><br><sub>Beatriz Rodrigues</sub>](https://github.com/Beatriz-Rodriguesx) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/145875117?v=4" width=115><br><sub>Beatriz Silva</sub>](https://github.com/BiaSilvaa) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/144251910?v=4" width=115><br><sub>Carlos Lima</sub>](https://github.com/CarlosDev258) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/104471926?v=4" width=115><br><sub>Flavia Favacho</sub>](https://github.com/flaviafavacho) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/145810174?v=4" width=115><br><sub>Gabriel Oliveira</sub>](https://github.com/gabrieloliveiraa05) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/144847596?v=4" width=115><br><sub>Joana D'Arc</sub>](https://github.com/joanadarc84) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/69319634?v=4" width=115><br><sub>Kelvia Santos</sub>](https://github.com/kelvia-snts) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/62075108?v=4" width=115><br><sub>Rennan Reis</sub>](https://github.com/rennan2020) |
