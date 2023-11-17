@@ -29,16 +29,16 @@
 </ul>
 
 # :hammer: Funcionalidades e Demonstração da Aplicação
-`Tela Principal`: representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais. 
+`Tela Principal`: <p>representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais.</p> 
 
 <p> 
 A tela home é composta por 3 arquivos js: index, styled e constants. 
 
-O index.js representa a Tela Principal e está dividido em várias seções, cada uma representando um bloco ou uma parte específica da página. Todas as seções da página se encontram dentro do ContainerHome.
+🛠️ O index.js representa a Tela Principal e está dividido em várias seções, cada uma representando um bloco ou uma parte específica da página. Todas as seções da página se encontram dentro do ContainerHome.
 
-O styled.js representa os elementos de estilo da página principal.
+⭐ O styled.js representa os elementos de estilo da página principal.
 
-O constants.js representa os filtros de mês e categoria da seção de editais da página principal.
+⌨️ O constants.js representa os filtros de mês e categoria da seção de editais da página principal.
 
 </p>
 
@@ -84,45 +84,44 @@ O constants.js representa os filtros de mês e categoria da seção de editais d
 <br/>
 <br/>
 
-`Tela de Login`: representa a tela de acesso do usuário à plataforma através das suas credenciais de autenticação seja ele um agente ou administrador.
+`Tela de Login`: <p>representa a tela de acesso do usuário à plataforma através das suas credenciais de autenticação seja ele um agente ou administrador.</p>
 
-<p>
 A tela de login é composta por 3 arquivos js: Login, Login.Adm e styled.
 
-O Login.js representa a tela de login do Agente, indíviduo que participa de editais lançados pela Funcultura, competindo por recursos financeiros para a execução de projetos culturais específicos.
+🛠️ O Login.js representa a tela de login do Agente, indíviduo que participa de editais lançados pela Funcultura, competindo por recursos financeiros para a execução de projetos culturais específicos.
 
-O LoginAdm.js representa a tela de login do Administrador, indivíduo que realiza a gestão e manutenção da plataforma e dos editais divulgados.
+🛠️ O LoginAdm.js representa a tela de login do Administrador, indivíduo que realiza a gestão e manutenção da plataforma e dos editais divulgados.
 
-O styled.js representa os elementos de estilo utilizados na tela de login.
-</p>
+⭐ O styled.js representa os elementos de estilo utilizados na tela de login.
+
 
 <h3>Da pasta Components foram importados os seguintes componentes:</h3>
 <ul><li>Header</li>
 <li>Footer</li></ul>
 
 <h3>Do react foi importado o seguinte componente:</h3>
-<p><li>React, useState</li>
+<ul><li>React, useState</li></ul>
 
 <h3>Do arquivo validations.js da pasta Utils foram importados os seguintes componentes:</h3>
-<li>cpfCnpjMask</li>
-<li>validatePassword</li>
+<ul><li>cpfCnpjMask</li>
+<li>validatePassword</li></ul>
 
 <h3>Do react-router-dom foi importado o seguinte componente:</h3>
-<li>useNavigate</li>
+<ul><li>useNavigate</li></ul>
 
 <h3>Do styled.js foram importados os seguintes componentes:</h3>
-<li>ContainerLogin</li>
+<ul><li>ContainerLogin</li>
 <li>ReCaptcha</li>
-<li>Acessos</li>
+<li>Acessos</li></ul>
 
 <h3>Do LoginAdm.js foi importado o seguinte componente:</h3>
-<li>LoginAdm</li>
+<ul><li>LoginAdm</li></ul>
 
 <h3>Da pasta Form (dentro da pasta assets) foi importado o seguinte componente:</h3>
-<li>reCaptcha</li>
+<ul><li>reCaptcha</li></ul>
 
 <h3>Do react-bootstrap foi importado o seguinte componente:</h3>
-<li>Form</li>
+<ul><li>Form</li></ul>
 
 <h3>Antes da estrutura da página, foram utilizados os seguintes componentes funcionais de React:</h3>
 <li>useState: Utiliza o Hook useState para gerenciar estados locais, incluindo form (para os dados do formulário), loading (para indicar se o processo de login está em andamento), cpfCnpj (para armazenar CPF ou CNPJ), e agente (para controlar se a tela exibe o formulário de agente ou administrador).</li>
@@ -267,11 +266,10 @@ Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na c
 <br/>
 <br/>
 
-`Tela de Inscrição do Edital`: representa a tela onde é exibido o formulário de inscrição para o edital escolhido pelo agente.
+`Tela de Inscrição do Edital`: <p>representa a tela onde é exibido o formulário de inscrição para o edital escolhido pelo agente.</p>
 
-<p>
 A tela de inscrição do edital é composta pelo arquivo index.js, que representa o formulário de inscrição.
-</p>
+
 
 <h3>Da pasta Components foram importados os seguintes componentes:</h3>
 <ul><li>Header</li>
@@ -331,16 +329,15 @@ Se a categoria for "parecerista", renderiza checkboxes de checkboxFormParecerist
 <br/>
 <br/>
 
-`Tela de Perfil (Agente)`: representa a tela onde o agente visualiza suas informações pessoais além de suas inscrições, notificações, conexões e documentações.
+`Tela de Perfil (Agente)`: <p>representa a tela onde o agente visualiza suas informações pessoais além de suas inscrições, notificações, conexões e documentações.</p>
 
-<p>A tela de perfil do agente é formada por 3 arquivos js: constantsAccount, index e styled.
+A tela de perfil do agente é formada por 3 arquivos js: constantsAccount, index e styled.
 
-O arquivo index.js representa a tela de perfil do agente.
+🛠️ O arquivo index.js representa a tela de perfil do agente.
 
-O arquivo styled.js representa os elementos de estilo utilizados na tela de perfil.
+⭐ O arquivo styled.js representa os elementos de estilo utilizados na tela de perfil.
 
-O arquivo constantAccount.js representa a lista de etapas (steps) e etapas concluídas (stepsFinished) em um processo de submissão a um edital. Cada etapa é representada como um objeto dentro de um array.
-</p>
+📜 O arquivo constantAccount.js representa a lista de etapas (steps) e etapas concluídas (stepsFinished) em um processo de submissão a um edital. Cada etapa é representada como um objeto dentro de um array.
 
 <h3>Da pasta components foram importados os seguintes componentes:</h3>
 <ul><li>Header</li>
@@ -391,15 +388,14 @@ O arquivo constantAccount.js representa a lista de etapas (steps) e etapas concl
 </br>
 </br>
 
-`Tela de Perfil (Administrador)`: representa a tela onde o administrador visualiza suas informações pessoais além de suas inscrições, notificações, pareceristas e documentações para análise.
+`Tela de Perfil (Administrador)`: <p>representa a tela onde o administrador visualiza suas informações pessoais além de suas inscrições, notificações, pareceristas e documentações para análise.</p>
 
-<p>
 A tela de perfil do administrador é formada por 2 arquivos js: index e styled.
 
-O arquivo index.js representa a tela de perfil do administrador.
+🛠️ O arquivo index.js representa a tela de perfil do administrador.
 
-O arquivo styled.js representa os elementos de estilo utilizados na tela de perfil.
-</p>
+⭐ O arquivo styled.js representa os elementos de estilo utilizados na tela de perfil.
+
 
 <h3>Da pasta components foram importados os seguintes componentes:</h3>
 <ul><li>Header</li>
