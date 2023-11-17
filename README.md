@@ -81,7 +81,8 @@ O constants.js representa os filtros de mês e categoria da seção de editais d
 <li>CardBox: Seção de eventos, onde cada evento é exibido por meio do componente CardHome. Os eventos são mapeados a partir do array eventsCard e apresentados em cartões. Cada cartão inclui informações relacionadas ao evento (título, imagem, data e descrição). </li>
 <li>Footer: Representa o rodapé que contém informações institucionais, linguagens, suporte, logos e links para redes sociais. </li></ul>
 
-
+<br/>
+<br/>
 
 `Tela de Login`: representa a tela de acesso do usuário à plataforma através das suas credenciais de autenticação seja ele um agente ou administrador.
 
@@ -140,6 +141,7 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 <li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais. </li>
 
 <br />
+<br />
 
 `Tela de Cadastro`: <p>A tela de cadastro foi idealizada para ser intuitiva e receptiva para o usuário, ela foi construída com uma interface familiar o que torna o processo de cadastramento confortável.</p>
 
@@ -151,7 +153,7 @@ O styled.js representa os elementos de estilo utilizados na tela de login.
 
 ⭐ Também importamos um arquivo styled.js do **Login**  que foi onde trabalhamos a apresentação visual dos elementos compartilhados.
 
-<h2>Na construção utilizamos alguns componentes importados</h2>
+<h3>Na construção utilizamos alguns componentes importados</h3>
 
 <h3>Biblioteca React Bootstrap</h3>
 <ul>
@@ -211,9 +213,7 @@ Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na c
 ⭐ O styled.js foi onde trabalhamos a apresentação visual dos elementos.
 </p>
 
-<h2>Na pasta Componentes do PublicNotice importamos bibliotecas, elementos e caminhos de outros componentes</h2>
-
-
+<h3>Na pasta Componentes do PublicNotice importamos bibliotecas, elementos e caminhos de outros componentes</h3>
 
 <h3>Biblioteca React Bootstrap</h3>
 <ul>
@@ -264,7 +264,8 @@ Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na c
 
 <li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais. </li>
 
-<br />
+<br/>
+<br/>
 
 `Tela de Inscrição do Edital`: representa a tela onde é exibido o formulário de inscrição para o edital escolhido pelo agente.
 
@@ -330,9 +331,67 @@ Se a categoria for "parecerista", renderiza checkboxes de checkboxFormParecerist
 <br/>
 <br/>
 
-- `Tela de Perfil (Agente)`: descrição da tela
+`Tela de Perfil (Agente)`: representa a tela onde o agente visualiza suas informações pessoais além de suas inscrições, notificações, conexões e documentações.
 
-- `Tela de Perfil (Administrador)`: descrição da tela
+<p>A tela de perfil do agente é formada por 3 arquivos js: constantsAccount, index e styled.
+
+O arquivo index.js representa a tela de perfil do agente.
+
+O arquivo styled.js representa os elementos de estilo utilizados na tela de perfil.
+
+O arquivo constantAccount.js representa a lista de etapas (steps) e etapas concluídas (stepsFinished) em um processo de submissão a um edital. Cada etapa é representada como um objeto dentro de um array.
+</p>
+
+<h3>Da pasta components foram importados os seguintes componentes:</h3>
+<ul><li>Header</li>
+<li>Footer</li></ul>
+
+<h3>Da pasta Profiles (dentro da pasta components) foi importado o seguinte componente:</h3>
+<ul><li>ProfileHeaders</li></ul>
+
+<h3>Da pasta Profile (dentro da pasta assets) foram importados os seguintes componentes:</h3>
+<ul><li>avatarUser</li>
+<li>cardEdital</li>
+<li>cardEdital2</li></ul>
+
+<h3>Do arquivo styled.js foram importados os seguintes componentes:</h3>
+<ul><li>NoticeSummary</li>
+<li>Wrapper</li>
+<li>Legend</li></ul>
+
+<h3>Do arquivo constantsAccount.js foram importados os seguintes componentes:</h3>
+<ul><li>steps</li>
+<li>stepsFinished</li></ul>
+
+<h3>Do arquivo styled.js da pasta de AdminDetails foram importados os seguintes componentes:</h3>
+<ul><li>ContainerTable</li>
+<li>Table</li>
+<li>ThOne</li>
+<li>ThTwo</li>
+<li>ThTree</li>
+<li>ThFour</li>
+<li>ThFive</li>
+<li>stepsFinished</li></ul>
+
+<h3>Do react foi importado o seguinte componente:</h3>
+<ul><li>useState</li></ul>
+
+<h3>A página de perfil do agente é composta pelos seguintes componentes (alguns já importados e citados acima):</h3>
+<li>Account: Utiliza o hook useState para gerenciar dois estados, inscricoes e documentacoes, estados booleanos que indicam se a seção de inscrições ou a seção de documentações deve ser exibida.</li>
+<li>mostarInscricao: Define inscricoes como true e documentacoes como false, indicando que a seção de inscrições deve ser exibida.</li>
+<li>mostrarDoc: Define inscricoes como false e documentacoes como true, indicando que a seção de documentações deve ser exibida.</li>
+<li>Wrapper: Cria uma estrutura visual para representar o cabeçalho e informações do perfil de um usuário, incluindo a ocupação e uma opção para seguir o perfil. O estilo e comportamento desses componentes dependeriam da implementação específica dos componentes Header e ProfileHeaders.</li>
+
+<h4>Dentro do Wrapper temos os seguintes componentes:</h4>
+<li>ContainerTable: Cria uma tabela com um cabeçalho que inclui títulos de colunas e alguns estilos condicionais baseados em variáveis de estado (inscricoes e documentacoes). Quando as colunas "Inscrições" ou "Documentações" são clicadas, as funções mostarInscricao ou mostrarDoc são acionadas, respectivamente.</li>
+<li>inscricoes: Renderiza uma seção dedicada às inscrições, incluindo informações sobre o progresso, o histórico e uma legenda, dependendo do valor da variável de estado inscricoes.</li>
+<li>documentacoes: Renderiza dinamicamente um elemento div com o texto "Documentações" com base no valor da variável documentacoes. Se documentacoes for verdadeira, o elemento será renderizado; caso contrário, não será renderizado.</li>
+<li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais.</li>
+
+</br>
+</br>
+
+`Tela de Perfil (Administrador)`: descrição da tela
 
 
 # Pessoas Desenvolvedoras do Projeto
