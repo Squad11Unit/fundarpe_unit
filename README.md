@@ -266,7 +266,69 @@ Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na c
 
 <br />
 
-- `Tela de Inscrição do Edital`: descrição da tela
+`Tela de Inscrição do Edital`: representa a tela onde é exibido o formulário de inscrição para o edital escolhido pelo agente.
+
+<p>
+A tela de inscrição do edital é composta pelo arquivo index.js, que representa o formulário de inscrição.
+</p>
+
+<h3>Da pasta Components foram importados os seguintes componentes:</h3>
+<ul><li>Header</li>
+<li>Footer</li></ul>
+
+<h3>Da pasta Forms (dentro da pasta components) foram importados os seguintes componentes:</h3>
+<ul><li>ContainerFormPage</li>
+<li>FormsPublicNotices</li>
+<li>CheckBoxForm</li>
+<li>publicForms</li>
+<li>publicFormsTwo</li>
+<li>checkboxForm</li>
+<li>checkboxFormGeral</li>
+<li>checkboxFormAudioV</li>
+<li>checkboxFormM</li>
+<li>checkboxFormParecerista</li></ul>
+
+<h3>Da pasta PublicNotice (dentro da pasta components) foram importados os seguintes componentes:</h3>
+<ul><li>FileIcon</li>
+<li>LampIcon</li></ul>
+
+<h3>Da pasta Card (dentro da pasta components) foi importado o seguinte componente:</h3>
+<ul><li>editalCard</li></ul>
+
+<h3>Do react-bootstrap foi importado o seguinte componente:</h3>
+<ul><li>Button</li></ul>
+
+<h3>Do react-bootstrap-icons foram importados os seguintes componentes:</h3>
+<ul><li>FileText</li>
+<li>Lightbulb</li>
+<li>Download</li></ul>
+
+<h3>A página de inscrição é composta pelos seguintes componentes (alguns já importados e citados acima):</h3>
+<li>const id: Extrai o ID da URL atual sendo parte final da rota. O ID é usado posteriormente para condicionalmente renderizar diferentes seções do formulário com base no conteúdo do objeto editalCard.</li>
+<li>sectionZero: Seção de introdução ao formulário de inscrição, apresentando informações como cabeçalho da página, ícones, detalhes do edital com base no ID da URL e um número de inscrição fictício. As classes CSS sugerem estilos específicos aplicados a diferentes partes desta seção.</li>
+<li>h1: Apresenta o título do formulário de inscrição. </li> 
+<li>editalCard.map((item): Mapeia sobre o array editalCard e renderiza seções específicas do formulário com base nas categorias e no ID da URL. É verificada a categoria de cada item em editalCard e renderizada uma seção específica (sectionOne) com base nessa categoria. Cada seção contém um conjunto de checkboxes representados pelo componente CheckBoxForm.
+
+<br/>
+
+<p>
+Se a categoria for "musica", renderiza checkboxes de checkboxForm.
+Se a categoria for "geral", renderiza checkboxes de checkboxFormGeral.
+Se a categoria for "audiovisual", renderiza checkboxes de checkboxFormAudioV.
+Se a categoria for "microprojeto", renderiza checkboxes de checkboxFormM.
+Se a categoria for "parecerista", renderiza checkboxes de checkboxFormParecerista.
+</p>
+
+<br/>
+
+<li>É atribuída uma chave única (key) a cada seção com base no ID do item em editalCard. As chaves únicas são importantes para o React efetuar uma renderização eficiente de listas dinâmicas.</li>
+<li>sectionTwo: Representa a segunda seção do formulário, que se concentra em coletar informações sobre os dados pessoais do usuário, usando o array publicForms para dinamicamente renderizar os campos específicos do formulário.</li>
+<li>sectionThree: Representa a terceira seção do formulário, que se concentra em coletar informações relacionadas à autodeclaração do usuário, utilizando o array publicFormsTwo para dinamicamente renderizar os campos específicos do formulário.</li>
+<li>sectionFour: Fornece informações sobre como o usuário pode anexar documentos, incluindo instruções sobre o método de upload e requisitos, além de fornecer botões para salvar e finalizar a inscrição. </li>
+<li>Footer: Mesmo rodapé utilizado em todas as páginas, contendo informações institucionais, linguagens, suporte, logos e links para redes sociais.</li>
+
+<br/>
+<br/>
 
 - `Tela de Perfil (Agente)`: descrição da tela
 
