@@ -20,7 +20,11 @@ function RegistrationForm() {
   return (
     <ContainerFormPage>
       <sectionZero>
-        <Header />
+        <Header
+          userName={
+            localStorage.getItem("User") ? "Ana Silva" : "Roberto Silva"
+          }
+        />
         <div className={"flex_body"}>
           <div className={"text1"}>
             <FileIcon>

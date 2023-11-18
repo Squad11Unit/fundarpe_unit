@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-
 export const WrapDoc = styled.div`
   margin: 0 auto;
-  width: 80%;
+  padding: 0 3rem;
   h1 {
     margin: 1.5rem 0;
   }
 `;
 
 export const SelectGroup = styled.div`
+  margin-right: 3rem;
   display: flex;
   justify-content: flex-end;
   gap: 15px;
@@ -20,20 +20,27 @@ export const SelectGroup = styled.div`
     color: #1d275f;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
+  @media only screen and (max-device-width: 768px) {
+    justify-content: center;
+    margin-right: 0;
+  }
 `;
 
 export const WrapCard = styled.div`
   div {
-    margin: 0 auto 1.4rem 0;
+    margin: 0 auto 1.4rem;
     padding: 0;
   }
 `;
 
 export const WrapInscription = styled.div`
   margin: 0 auto;
-  width: 80%;
   h1 {
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 0 1.5rem 3rem;
+    @media only screen and (max-device-width: 768px) {
+      margin: 3rem 0;
+      text-align: center;
+    }
   }
   .dropdown {
     margin-bottom: 5rem;
@@ -80,6 +87,9 @@ export const ContainerTable = styled.div`
   width: 100%;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
+  @media only screen and (max-device-width: 768px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const Table = styled.table`
@@ -93,12 +103,12 @@ export const Table = styled.table`
   th:hover {
     cursor: pointer;
   }
-  @media only screen end (max-device-width: 768px){
-    margin: 20px 0 20px 30px;
+  @media only screen and (max-device-width: 768px){
+    margin-left: 2rem;
   };
-  @media only screen end (max-device-width: 425px){
-    margin: 0 0 0 10px;
-    font-size: 15px;
+  @media only screen and (max-device-width: 425px){
+    margin-left: 1rem;
+    font-size: 0.8rem;
   };
 `;
 

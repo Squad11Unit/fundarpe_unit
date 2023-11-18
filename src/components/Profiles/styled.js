@@ -13,6 +13,16 @@ export const ProfilePicture = styled.img`
 export const Images = styled.div`
   img {
     margin: -140px 0 0 175px;
+    @media only screen and (max-width: 768px) {
+      margin: -50px 0 0 10px;
+      width: 12.5rem;    
+      height: 12.5rem;    
+    }
+    @media only screen and (max-width: 425px) {
+      margin: -50px 0 0 10px;
+      width: 9rem;    
+      height: 9rem;    
+    }
   }
   div {
     text-align: end;
@@ -37,9 +47,10 @@ export const Images = styled.div`
 `;
 
 export const Description = styled.div`
-  display: flex;
+width: 31rem;  
+display: flex;
   flex-direction: column;
-  margin: 1rem 0 ;
+  margin: 1rem 0;
   position: relative;
   left: 30rem;
   h1 {
@@ -59,5 +70,13 @@ export const Description = styled.div`
       margin-top: 0.3rem;
     }
   }
-
+  @media only screen and (max-width: 768px) {
+    left: 15rem;
+    margin: 0 0 0 0.625rem;
+  }
+  @media only screen and (max-width: 425px) {
+    left: 9.375rem;
+    margin: 0 0 0 1.875rem;
+    width: 15rem;
+  }
 `;

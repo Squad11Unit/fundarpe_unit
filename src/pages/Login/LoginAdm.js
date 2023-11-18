@@ -57,6 +57,7 @@ function LoginAdm() {
             placeholder={"Matrícula"}
             onChange={handleMatricula}
             required
+            maxLength={11}
           />
 
           <Form.Control

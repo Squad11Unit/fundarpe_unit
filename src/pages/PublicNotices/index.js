@@ -5,7 +5,9 @@ import Footer from "../../components/Footer";
 const PublicNotices = () => {
   return (
     <div>
-      <Header />
+      <Header
+        userName={localStorage.getItem("User") ? "Ana Silva" : "Roberto Silva"}
+      />
       <PublicNotice />
       <Footer />
     </div>
