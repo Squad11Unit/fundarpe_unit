@@ -5,35 +5,9 @@ import {
 } from "react-bootstrap-icons";
 import banner from "../../assets/Profile/banner.png";
 import Button from "react-bootstrap/Button";
-import {
-  Banner,
-  Description,
-  Images,
-  ProfilePicture,
-  ContainerTable,
-  Table,
-  ThOne,
-  ThTwo,
-  ThTree,
-  ThFour,
-  ThFive,
-} from "./styled";
+import { Banner, Description, Images, ProfilePicture } from "./styled";
 
-const ProfileHeaders = ({
-  photo,
-  name,
-  occupation,
-  th1,
-  th2,
-  th3,
-  th4,
-  th5,
-  whether1,
-  whether5,
-  click1,
-  click5,
-  follow,
-}) => {
+const ProfileHeaders = ({ photo, name, occupation, follow }) => {
   return (
     <>
       <Banner

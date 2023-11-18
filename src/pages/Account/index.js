@@ -31,6 +31,10 @@ const Account = () => {
     setDocumentacoes(true);
   };
 
+  if (!localStorage.getItem("User")) {
+    window.location.href = "/login";
+  }
+
   return (
     <Wrapper>
       <Header userName="Ana Silva" />

@@ -1,7 +1,13 @@
 import CardHome from "../../components/Card";
 import CarouselHome from "../../components/Carousel";
 import Header from "../../components/Header";
-import { SelectGroup, CardBox, ContainerHome, AboutBox, ButtonBox } from "./styled";
+import {
+  SelectGroup,
+  CardBox,
+  ContainerHome,
+  AboutBox,
+  ButtonBox,
+} from "./styled";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
@@ -16,7 +22,7 @@ function Home() {
   return (
     <ContainerHome>
       <Header
-        userName="Ana Silva"
+        userName={localStorage.getItem("User") ? "Ana Silva" : "Roberto Silva"}
         institutions="Institucionais"
         buttonRegister="Registrar-se"
         buttonLogout="Sair"
@@ -44,7 +50,12 @@ function Home() {
         {editalCard.map((item) => (
           <CardHome
             key={item.id}
-            URL={`/edital/${item.id}`}
+            URL={
+              localStorage.getItem("User") ||
+              localStorage.getItem("Administrador")
+                ? `/edital/${item.id}`
+                : "/login"
+            }
             text={item.text}
             title={item.title}
             image={item.image}
@@ -86,7 +97,7 @@ function Home() {
             <div>
               <img
                 className="bloco_1"
-                width="401"
+                width="100%"
                 height="200"
                 src={Banner1}
                 alt="rvrfvfgrvfgr"
@@ -94,25 +105,22 @@ function Home() {
             </div>
             <img
               className="bloco_3"
-              width="401"
+              width="100%"
               height="200"
               src={Banner2}
               alt="rvrfvfgrvfgr"
             ></img>
           </div>
           <iframe
-            width="705.100"
-            height="400"
             src="https://www.youtube.com/embed/abHjagvHmtA?si=EJKRaqZ5Qy_Sw1AN"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
         </div>
         <div className={"color"}>
           <h2 className="whiteh2">Seja parte dessa iniciativa!</h2>
-          <h4>conheça os nossos projetos, vem fortalecer nossa cultura</h4>
+          <h3>conheça os nossos projetos, vem fortalecer nossa cultura</h3>
         </div>
       </div>
 
@@ -131,6 +139,7 @@ function Home() {
           />
         ))}
       </CardBox>
+      <br />
       <Footer />
     </ContainerHome>
   );

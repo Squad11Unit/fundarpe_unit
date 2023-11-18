@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerHome = styled.body`
   h1 {
-    margin: 60px 0 15px 140px;
+    margin: 2rem 0 0 3rem;
   }
   .b1 {
     font-size: 25px;
@@ -15,26 +15,31 @@ export const ContainerHome = styled.body`
   .flex_container {
     display: column;
     justify-content: center;
-    gap: -20px;
-    margin: 100px 180px;
+    margin: 4rem 4rem 0;
   }
   .flex_section {
     display: flex;
+    justify-content: center;
+    iframe {
+      width: 100%;
+    }
+    @media only screen and (max-device-width: 425px){
+      flex-direction: column;
+    }
   }
   .flex_imag {
     display: column;
   }
   .color {
     background-color: #f16226;
-    flex-direction: column!;
     border-radius: 0 0 5px 5px;
-    height: 170px;
+    padding-bottom: 1.5rem;
   }
   h2.whiteh2 {
     color: #ffff;
     padding: 30px 30px 0;
   }
-  h4 {
+  h3 {
     color: #ffff;
     padding: 0 29px 2px;
   }
@@ -43,12 +48,13 @@ export const ContainerHome = styled.body`
 export const ButtonBox = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
 `;
 
 export const SelectGroup = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-right: 140px;
+  margin: 0 3.5rem 4rem 0;
   gap: 15px;
   button {
     border-radius: 50px;
@@ -65,7 +71,7 @@ export const CardBox = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 50px;
-  margin: 50px 140px;
+  margin: 0 3rem;
 `;
 
 export const AboutBox = styled.div`

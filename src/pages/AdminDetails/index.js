@@ -23,6 +23,7 @@ import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import ProfileHeaders from "../../components/Profiles/header";
 import avatar from "../../assets/Profile/avatar.jpg";
+import Footer from "../../components/Footer";
 
 function AdminDetails() {
   const [inscricoes, setIncricoes] = useState(true);
@@ -37,6 +38,10 @@ function AdminDetails() {
     setIncricoes(false);
     setDocumentacoes(true);
   };
+
+  if (!localStorage.getItem("Administrador")) {
+    window.location.href = "/login";
+  }
 
   return (
     <div>
@@ -108,8 +113,8 @@ function AdminDetails() {
       )}
       {documentacoes && (
         <WrapDoc>
+          <h1>Documentação</h1>
           <Documentations>
-            <h1>Documentação</h1>
             <Form.Select size="lg">
               <option>Renovação PCP</option>
             </Form.Select>
@@ -158,6 +163,7 @@ function AdminDetails() {
           </Documentations>
         </WrapDoc>
       )}
+      <Footer />
     </div>
   );
 }
