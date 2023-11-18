@@ -16,6 +16,7 @@ import {
   ThFive,
 } from "../AdminDetails/styled";
 import { useState } from "react";
+import { Form } from "react-bootstrap";
 
 const Account = () => {
   const [inscricoes, setIncricoes] = useState(true);
@@ -150,7 +151,37 @@ const Account = () => {
           )}
         </>
       )}
-      {documentacoes && <div>Documentações</div>}
+      {documentacoes && (
+        <div className="docMain">
+          <h1 className="H1">Sua documentação</h1>
+          <div className="documentationBox">
+            <Form.Group>
+              <Form.Label>Biografia</Form.Label>
+              <Form.Control as="textarea" rows={4} />
+            </Form.Group>
+            <Form.Select size="md">
+              <option>Categoria e Subcategoria</option>
+            </Form.Select>
+            <Form.Select size="md">
+              <option>Prestação de conta</option>
+            </Form.Select>
+            <Form.Select size="md">
+              <option>Selecione o edital</option>
+            </Form.Select>
+            <Form.Select size="md">
+              <option>Meus documentos</option>
+            </Form.Select>
+          </div>
+          <p className="P first">Importante! voce so pode incluir um documento em cada lugar. </p>
+          <p className="P">curriculum</p>
+          <div className="grayBox">
+            <span>Arraste ou selecione um documento max. 1 - max. 10 - MB formato PDF /DOC/ DOCX</span>
+          </div>
+          <div className="save">
+            <button>Salvar alterações</button>
+          </div>
+        </div>
+      )}
       <Footer />
     </Wrapper>
   );
