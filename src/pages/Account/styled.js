@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   h2 {
-    margin: 6rem 0 0 6rem;
+    margin: 2rem 0 0 5rem;
     font-size: 2.25rem;
     clear: both;
   }
@@ -10,16 +10,22 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-item: flex-start;
-    width: 90%;
-    margin: 4rem auto ;
+    width: 95%;
+    margin: 4rem auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
     .step {
       text-align: center;
-      width: 20%;
+      width: 30%;
       position: relative;
     }
     .stepTitle {
       margin-bottom: 0.625rem;
       font-weight: 600;
+      @media only screen and (max-device-width: 425px) {
+        font-size: 0.9rem;
+      }
     }
     .stepSubtitle {
       font-size: 0.8rem;
@@ -58,6 +64,49 @@ export const Wrapper = styled.div`
       content: "";
     }
   }
+  .docMain {
+    padding: 0 5rem 3rem;
+  }
+  .H1 {
+    margin: 2rem 0 2rem;
+  }
+  .documentationBox {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .P{
+    font-size: 0.9rem;
+  }
+  .P.first {
+    margin-top: 2rem;
+  }
+  .grayBox{
+    background: #D9D9D9;
+    width: 32rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    span{
+      padding-left: 1rem;
+    }
+  }
+  .save{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 1rem;
+      font-weight: 600;
+      background: #D9D9D9;
+
+    }
+
+  }
 `;
 
 export const NoticeSummary = styled.div`
@@ -68,6 +117,9 @@ export const NoticeSummary = styled.div`
   font-size: 2rem;
   h3 {
     font-weight: 700;
+  }
+  @media only screen and (max-device-width: 768px) {
+    flex-direction: column;
   }
 `;
 
@@ -94,8 +146,8 @@ export const Legend = styled.div`
       width: 30px;
       height: 30px;
     }
-    .wait{
-      background: #A0A0A0;
+    .wait {
+      background: #a0a0a0;
     }
   }
 `;
