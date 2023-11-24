@@ -1,8 +1,8 @@
 import { ContainerLogin, ReCaptcha } from "./styled";
 import { useNavigate } from "react-router-dom";
-import reCaptcha from "../../assets/Form/reCaptcha.png";
+import reCaptcha from "../../Assets/Form/reCaptcha.png";
 import { useState } from "react";
-import { validatePassword } from "../../utils/validations";
+import { validatePassword } from "../../Utils/validations";
 import { Form } from "react-bootstrap";
 
 function LoginAdm() {

@@ -1,8 +1,8 @@
-import recife from "../../assets/Principal/recife.png";
-import bezerros from "../../assets/Principal/bezerros.png";
-import nazareDaMata from "../../assets/Principal/NazareDaMata.png";
-import caruaru from "../../assets/Principal/Caruaru.png";
-import gravata from "../../assets/Principal/Gravata.png";
+import recife from "../../Assets/Principal/recife.png";
+import bezerros from "../../Assets/Principal/bezerros.png";
+import nazareDaMata from "../../Assets/Principal/NazareDaMata.png";
+import caruaru from "../../Assets/Principal/Caruaru.png";
+import gravata from "../../Assets/Principal/Gravata.png";
 
 export const imagens = [
   {

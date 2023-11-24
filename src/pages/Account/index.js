@@ -1,9 +1,9 @@
 import Header from "../../components/Header";
 import ProfileHeaders from "../../components/Profiles/header";
-import avatarUser from "../../assets/Profile/avatar-user.jpg";
+import avatarUser from "../../Assets/Profile/avatar-user.jpg";
 import { NoticeSummary, Wrapper, Legend } from "./styled";
-import cardEdital from "../../assets/Profile/cardEdital.png";
-import cardEdital2 from "../../assets/Profile/pareceristaCard.png";
+import cardEdital from "../../Assets/Profile/cardEdital.png";
+import cardEdital2 from "../../Assets/Profile/pareceristaCard.png";
 import { steps, stepsFinished } from "./constantsAccount";
 import Footer from "../../components/Footer";
 import {

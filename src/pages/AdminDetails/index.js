@@ -22,7 +22,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import ProfileHeaders from "../../components/Profiles/header";
-import avatar from "../../assets/Profile/avatar.jpg";
+import avatar from "../../Assets/Profile/avatar.jpg";
 import Footer from "../../components/Footer";
 
 function AdminDetails() {

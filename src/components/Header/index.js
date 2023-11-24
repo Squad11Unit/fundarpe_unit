@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { HeaderContainer, InitialOptions } from "./styled";
-import logoheader from "../../assets/logoheader.png";
+import logoheader from "../../Assets/logoheader.png";
 
 function Header({
   userName,

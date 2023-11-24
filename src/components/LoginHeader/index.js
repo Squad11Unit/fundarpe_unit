@@ -1,6 +1,6 @@
 import { Wrapper, SocialGroup } from "./styled";
-import logoFundarpe from "../../assets/LoginHeader/logoFundarpe.png";
-import google from "../../assets/LoginHeader/google.jpg";
+import logoFundarpe from "../../Assets/LoginHeader/logoFundarpe.png";
+import google from "../../Assets/LoginHeader/google.jpg";
 import { Facebook, Linkedin } from "react-bootstrap-icons";
 
 function LoginHeader({ type, name }) {
