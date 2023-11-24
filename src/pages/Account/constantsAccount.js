@@ -2,7 +2,7 @@ export const steps = [
     {
       id: 1,
       title: "Inscrição",
-      subTitle: "28/082023 às 15:00",
+      subTitle: "28/08/2023 às 15:00",
       status: "active",
     },
     {
@@ -71,7 +71,7 @@ export const steps = [
     {
       id: 6,
       title: "Entrega documento",
-      subTitle: "28/082023 às 15:00",
+      subTitle: "28/08/2023 às 15:00",
       status: "active",
     },
   ];
