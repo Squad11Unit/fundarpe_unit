@@ -68,6 +68,7 @@ const PublicNotice = () => {
             </>
           );
         }
+        return null;
       })}
 
       <SectionThree>
@@ -104,11 +105,7 @@ const PublicNotice = () => {
           <p>
             O objetivo deste edital é a seleção e o credenciamento de
             profissionais, pessoas físicas e/ou Microempreendedores Individuais
-            – MEI, residentes ou não em Pernambuco, para compor o Banco de
-            Pareceristas, que possam vir a exercer as atividades de análise,
-            classificação e emissão de parecer técnico sobre projetos culturais
-            no âmbito dos Editais do Fundo Pernambucano de Incentivo à Cultura -
-            Funcultura, desde que atendidos os requisitos descritos neste
+            – MEI, residentes ou não em Pernambuco, para este edital, desde que atendidos os requisitos descritos neste
             Instrumento Convocatório, visando à futura e eventual contratação
             dos mesmos.
           </p>

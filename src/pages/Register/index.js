@@ -5,7 +5,7 @@ import LoginHeader from "../../components/LoginHeader";
 import { Acessos } from "../Login/styled";
 import { ContainerRegister } from "./styled";
 import { useNavigate } from "react-router-dom";
-import { cpfCnpjMask, validatePassword } from "../../Utils/validations";
+import { cpfCnpjMask, validatePassword } from "../../utils/validations";
 import Footer from "../../components/Footer";
 
 const Register = () => {
@@ -26,13 +26,6 @@ const Register = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     navigate("/login");
-  }
-
-  const handleChange = (event) => {
-    setForm({
-      ...form,
-      [event.target.name]: event.target.value,
-    })
   }
 
   const handleCPF = (event) => {

@@ -4,6 +4,9 @@ export const ContainerHome = styled.body`
   h1 {
     margin: 2rem 0 0 3rem;
   }
+  .events {
+    margin: 1rem 0 2rem 4rem;
+  }
   .b1 {
     font-size: 25px;
     padding: 10px 55px;

@@ -49,7 +49,7 @@ function RegistrationForm() {
         </div>
       </sectionZero>
 
-      <h1>Formulário de Inscrição</h1>
+      <h1 className="h1orange">Formulário de Inscrição</h1>
 
       {editalCard.map((item) => {
         if (id.includes(item.id)) {
