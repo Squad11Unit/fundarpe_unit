@@ -69,7 +69,7 @@ function Home() {
         <button className={"b1"}>Ver mais</button>
       </ButtonBox>
       <AboutBox>
-        <a href="https://www.cultura.pe.gov.br/funcultura/" target="_blank">
+        <a href="https://www.cultura.pe.gov.br/funcultura/" target="_blank" rel="noreferrer">
           O FUNCULTURA
         </a>
         <div>
@@ -124,7 +124,7 @@ function Home() {
         </div>
       </div>
 
-      <h1>Eventos</h1>
+      <h1 className="events">Eventos</h1>
       <CardBox>
         {eventsCard.map((item) => (
           <CardHome

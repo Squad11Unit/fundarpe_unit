@@ -9,7 +9,7 @@ export const ContainerFormPage = styled.div`
     padding: 3rem 8rem;
   }
 
-  h1 {
+  .h1orange {
     margin: 0rem 9rem 0 9rem;
     border-radius: 0.8rem;
     background-color: #ffaa00;
@@ -38,7 +38,7 @@ export const ContainerFormPage = styled.div`
   .iconD {
     margin: 0.5rem 1rem 0.1rem 1rem;
   }
-  .attchIcon{
+  .attchIcon {
     display: flex;
   }
   .load {

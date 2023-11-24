@@ -69,6 +69,7 @@ export const Documentations = styled.div`
     font-weight: 600;
   }
   table{
+    margin-bottom: 4rem;
     text-align: center;
     border: solid 2px grey;
     width: 99%;

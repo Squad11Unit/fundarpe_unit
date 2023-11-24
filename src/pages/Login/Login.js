@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { cpfCnpjMask, validatePassword } from "../../Utils/validations";
+import { cpfCnpjMask, validatePassword } from "../../utils/validations";
 import { useNavigate } from "react-router-dom";
 import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
 import Header from "../../components/Header";
