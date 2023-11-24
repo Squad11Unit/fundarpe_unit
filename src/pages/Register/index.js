@@ -5,7 +5,7 @@ import LoginHeader from "../../components/LoginHeader";
 import { Acessos } from "../Login/styled";
 import { ContainerRegister } from "./styled";
 import { useNavigate } from "react-router-dom";
-import { cpfCnpjMask, validatePassword } from "../../utils/validations";
+import { cpfCnpjMask, validatePassword } from "../../Utils/validations";
 import Footer from "../../components/Footer";
 
 const Register = () => {

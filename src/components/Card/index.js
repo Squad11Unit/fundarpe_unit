@@ -7,9 +7,8 @@ function CardHome({ URL, image, text, title, month, day, description }) {
       <Cards href={URL}>
         <Card
           style={{
-            width: "18rem",
+            width: "21.813rem",
             boxShadow: "2px 2px 2px 2px rgba(0, 0, 0, 0.2)",
-            width: "349px",
           }}
         >
           <Card.Img variant="top" src={image} alt={text} />

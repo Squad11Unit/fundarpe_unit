@@ -13,9 +13,9 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import { meses, categorias } from "./constants";
 import { editalCard } from "../../components/Card/editalCard";
 import { eventsCard } from "../../components/Card/eventsCard";
-import Banner1 from "../../assets/Principal/banner/Banner1.png";
-import Banner2 from "../../assets/Principal/banner/Banner2.png";
-import bridge from "../../assets/ponteMauricioDeNassau.png";
+import Banner1 from "../../Assets/Principal/banner/Banner1.png";
+import Banner2 from "../../Assets/Principal/banner/Banner2.png";
+import bridge from "../../Assets/ponteMauricioDeNassau.png";
 import Footer from "../../components/Footer";
 
 function Home() {

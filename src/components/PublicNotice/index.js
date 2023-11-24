@@ -9,7 +9,7 @@ import {
   FileIcon,
   LampIcon,
 } from "./styled";
-import publicado from "../../assets/editalPage/publicado.png";
+import publicado from "../../Assets/editalPage/publicado.png";
 import {
   FileText,
   Lightbulb,

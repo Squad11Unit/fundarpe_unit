@@ -3,7 +3,7 @@ import {
   PeopleFill,
   PersonPlusFill,
 } from "react-bootstrap-icons";
-import banner from "../../assets/Profile/banner.png";
+import banner from "../../Assets/Profile/banner.png";
 import Button from "react-bootstrap/Button";
 import { Banner, Description, Images, ProfilePicture } from "./styled";
 

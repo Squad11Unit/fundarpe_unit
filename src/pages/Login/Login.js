@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { cpfCnpjMask, validatePassword } from "../../utils/validations";
+import { cpfCnpjMask, validatePassword } from "../../Utils/validations";
 import { useNavigate } from "react-router-dom";
 import { ContainerLogin, ReCaptcha, Acessos } from "./styled";
 import Header from "../../components/Header";
 import LoginAdm from "./LoginAdm";
-import reCaptcha from "../../assets/Form/reCaptcha.png";
+import reCaptcha from "../../Assets/Form/reCaptcha.png";
 import { Form } from "react-bootstrap";
 import Footer from "../../components/Footer";
 

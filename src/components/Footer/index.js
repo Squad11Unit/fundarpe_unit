@@ -7,9 +7,9 @@ import {
   Facebook,
   Linkedin,
 } from "react-bootstrap-icons";
-import background from "../../assets/Footer/fundo.png";
-import rodape from "../../assets/Footer/Barra colorida footer.png";
-import logosRodape from "../../assets/Footer/logo-Fundarpe-pernambuco.png";
+import background from "../../Assets/Footer/fundo.png";
+import rodape from "../../Assets/Footer/Barra colorida footer.png";
+import logosRodape from "../../Assets/Footer/logo-Fundarpe-pernambuco.png";
 
 const Footer = () => (
   <ContainerFooter

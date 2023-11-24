@@ -1,6 +1,6 @@
-import exposi from "../../assets/Principal/Card/Events-card/Exposi.png";
-import fotografia from "../../assets/Principal/Card/Events-card/fotografia.png";
-import casaViva from "../../assets/Principal/Card/Events-card/casa-viva.png";
+import exposi from "../../Assets/Principal/Card/Events-card/Exposi.png";
+import fotografia from "../../Assets/Principal/Card/Events-card/fotografia.png";
+import casaViva from "../../Assets/Principal/Card/Events-card/casa-viva.png";
 
 export const eventsCard = [
     {
