@@ -31,6 +31,8 @@
 # :hammer: Funcionalidades e Demonstração da Aplicação
 `Tela Principal`: <p>representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais.</p> 
 
+![Tela Inicial](<TELA INICIAL.1.png>)
+
 <p> 
 A tela home é composta por 3 arquivos js: index, styled e constants. 
 
@@ -85,6 +87,10 @@ A tela home é composta por 3 arquivos js: index, styled e constants.
 <br/>
 
 `Tela de Login`: <p>representa a tela de acesso do usuário à plataforma através das suas credenciais de autenticação seja ele um agente ou administrador.</p>
+
+![Tela de Login - Agente](Login-user.png) 
+
+![Tela de Login - Administrador](Login-adm.png)
 
 A tela de login é composta por 3 arquivos js: Login, Login.Adm e styled.
 
@@ -144,6 +150,8 @@ A tela de login é composta por 3 arquivos js: Login, Login.Adm e styled.
 
 `Tela de Cadastro`: <p>A tela de cadastro foi idealizada para ser intuitiva e receptiva para o usuário, ela foi construída com uma interface familiar o que torna o processo de cadastramento confortável.</p>
 
+![Tela de Cadastro](Cadast.png)
+
 <p>Para a construção da tela foi utilizado 2 arquivos js:</p>
 
 🛠️  index.js está dentro da pasta **pages** que são as telas de retorno para os usuários.
@@ -202,6 +210,8 @@ Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na c
 <br />
 
 `Tela de Detalhes do Edital`: <p>Cada edital possui sua particularidade, eles se dividem em Audiovisual, Geral, Microprojeto Cultural, Música e Parecerista. </p>
+
+![Tela de Detalhes do Edital](Parec1.png)
 
 <p> Para a composição da tela de detalhes do edital temos 3 arquivos js:
 
@@ -268,6 +278,8 @@ Dentro dessa pasta podemos ver importes do React Bootstrap que nos auxiliou na c
 
 `Tela de Inscrição do Edital`: <p>representa a tela onde é exibido o formulário de inscrição para o edital escolhido pelo agente.</p>
 
+![Tela de Inscrição do Edital](inscri%C3%A7%C3%A3o.png)
+
 A tela de inscrição do edital é composta pelo arquivo index.js, que representa o formulário de inscrição.
 
 
@@ -331,6 +343,8 @@ Se a categoria for "parecerista", renderiza checkboxes de checkboxFormParecerist
 
 `Tela de Perfil (Agente)`: <p>representa a tela onde o agente visualiza suas informações pessoais além de suas inscrições, notificações, conexões e documentações.</p>
 
+![Tela de Perfil - Agente](<Tela user (1).png>)
+
 A tela de perfil do agente é formada por 3 arquivos js: constantsAccount, index e styled.
 
 🛠️ O arquivo index.js representa a tela de perfil do agente.
@@ -389,6 +403,8 @@ A tela de perfil do agente é formada por 3 arquivos js: constantsAccount, index
 </br>
 
 `Tela de Perfil (Administrador)`: <p>representa a tela onde o administrador visualiza suas informações pessoais além de suas inscrições, notificações, pareceristas e documentações para análise.</p>
+
+![Tela de Perfil - Administrador](<Tela inicial adm.png>)
 
 A tela de perfil do administrador é formada por 2 arquivos js: index e styled.
 
