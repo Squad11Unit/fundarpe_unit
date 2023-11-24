@@ -1,4 +1,4 @@
-import parecerista from "../../Assets/Principal/Card/parecerista.png";
+import parecerista from "../../Assets/Principal/Card/Group 243.png";
 import funcultura from "../../Assets/Principal/Card/funcultura2023.png";
 
 export const editalCard = [
