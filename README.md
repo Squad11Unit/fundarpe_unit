@@ -28,6 +28,13 @@
   <li>Netlify</li>
 </ul>
 
+# ⚙ Como Executar a Aplicação:
+
+* Git clone 
+* Acessar o diretorio clonado, utilize o git bash
+* npm i
+* npm start
+
 # :hammer: Funcionalidades e Demonstração da Aplicação
 `Tela Principal`: <p>representa a tela principal da plataforma dedicada à promoção cultural e divulgação de eventos e editais.</p> 
 
@@ -98,7 +105,6 @@ A tela de login é composta por 3 arquivos js: Login, Login.Adm e styled.
 🛠️ O LoginAdm.js representa a tela de login do Administrador, indivíduo que realiza a gestão e manutenção da plataforma e dos editais divulgados.
 
 ⭐ O styled.js representa os elementos de estilo utilizados na tela de login.
-
 
 <h3>Da pasta Components foram importados os seguintes componentes:</h3>
 <ul><li>Header</li>
