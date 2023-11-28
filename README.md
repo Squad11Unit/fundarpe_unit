@@ -3,7 +3,7 @@
 ![Logo](https://github.com/Squad11Unit/fundarpe_unit/assets/89558668/d3690b15-ce9c-49f0-916f-8f5ac5e20617)
 
 # Badges
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
 
 # Índice
 * [Badges](#badges)
