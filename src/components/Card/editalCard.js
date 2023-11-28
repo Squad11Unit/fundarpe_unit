@@ -1,4 +1,5 @@
 import parecerista from "../../Assets/Principal/Card/Group 243.png";
+import pareceristaCard from "../../Assets/Principal/Card/parecerista.png";
 import funcultura from "../../Assets/Principal/Card/funcultura2023.png";
 
 export const editalCard = [
@@ -6,6 +7,7 @@ export const editalCard = [
       id: 1,
       text: "Banner do edital de parecerista",
       image: parecerista,
+      imageCard: pareceristaCard,
       title: "Parecerista",
       description: "EDITAL DE CREDENCIAMENTO DE PARECERISTA",
       day: 15,

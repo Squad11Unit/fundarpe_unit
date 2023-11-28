@@ -13,16 +13,15 @@ function LoginHeader({ type, name }) {
           <img src={google} alt="logo google" />
           <p>{name} com o google </p>
         </div>
-        <a>
+        <a href="!#">
           <Facebook />
         </a>
-        <a>
+        <a href="!#">
           <Linkedin />
         </a>
       </SocialGroup>
     </Wrapper>
   );
 }
-//BiLogoLinkedin
-//FaFacebookF
+
 export default LoginHeader;

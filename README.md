@@ -25,7 +25,7 @@
   <li>React-Bootstrap</li>
   <li>Node version managers(NPM)</li>
   <li>VS Code</li>
-  <li>Netlify</li>
+  <li>Vercel</li>
 </ul>
 
 # ⚙ Como Executar a Aplicação:

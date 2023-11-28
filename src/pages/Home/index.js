@@ -58,7 +58,7 @@ function Home() {
             }
             text={item.text}
             title={item.title}
-            image={item.image}
+            image={item.id === 1 ? item.imageCard : item.image}
             month={item.month}
             day={item.day}
             description={item.description}
